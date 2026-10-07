@@ -169,7 +169,7 @@ h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04;letter-spac
 .nav.scrolled .nav-inner{height:120px}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:164px;transition:height .35s}
 .brand{display:flex;align-items:center;gap:14px}
-.brand-logo{display:block;height:104px;width:auto;transition:height .35s;image-rendering:auto;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.brand-logo{display:block;height:104px;width:auto;max-width:none;transition:height .35s}
 .nav.scrolled .brand-logo{height:74px}
 .nav-links{display:flex;align-items:center;gap:0}
 .nav-links a.lnk{font-size:14.5px;font-weight:500;color:rgba(243,232,203,.78);position:relative;padding:8px 26px}
@@ -356,8 +356,8 @@ section{position:relative}
   border-color:rgba(245,203,69,.4)}
 .news-card-cta .news-tag{background:transparent;color:var(--accent-soft);border:1px solid var(--accent-soft);padding:4px 10px}
 .news-disclaimer{margin-top:clamp(28px,3vw,40px);font-size:12.5px;color:var(--muted);text-align:center}
-@media(max-width:900px){.news-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.news-grid{grid-template-columns:1fr}}
+
+
 .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
 .sec-num{font-family:var(--display);font-size:clamp(15px,1.4vw,17px);color:var(--accent);font-weight:500;letter-spacing:.05em}
 .sec-title{font-size:clamp(34px,5.2vw,68px);margin-top:18px;max-width:18ch}
@@ -383,7 +383,7 @@ section{position:relative}
 .about-rn{font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--accent);
   padding-top:5px;position:relative}
 .about-row p{margin:0}
-@media(max-width:860px){.about-intro{grid-template-columns:1fr;gap:clamp(24px,4vw,34px)}.about-statement-col{position:static}}
+
 
 /* Missão · Visão · Valores — editorial premium */
 .mvv-flow{margin-top:clamp(48px,6vw,82px)}
@@ -401,7 +401,7 @@ section{position:relative}
 .mvv-st blockquote{position:relative;z-index:1;margin:clamp(20px,2.4vw,30px) 0 0;
   font-family:var(--display);font-weight:400;font-size:clamp(19px,1.85vw,25px);line-height:1.42;
   letter-spacing:-.012em;color:var(--ink);text-wrap:pretty}
-@media(max-width:760px){.mvv-statements{grid-template-columns:1fr}}
+
 
 .mvv-values-wrap{margin-top:clamp(40px,5vw,68px)}
 .mvv-values{list-style:none;margin:clamp(22px,2.6vw,34px) 0 0;padding:0;background:none;border:none;
@@ -418,7 +418,7 @@ section{position:relative}
 .mvv-values li b{font-family:var(--display);font-size:clamp(17px,1.5vw,20px);font-weight:600;color:var(--ink);display:block}
 .mvv-vd{display:block;font-size:14.5px;line-height:1.56;color:var(--muted);margin-top:8px}
 @media(prefers-reduced-motion:reduce){.mvv-st::before,.mvv-values li{transition:none;opacity:1;transform:none}}
-@media(max-width:680px){.mvv-values{grid-template-columns:1fr}.mvv-values li:last-child:nth-child(odd){grid-column:auto}}
+
 
 /* Elementos gráficos decorativos de fundo */
 #firma,#contato{position:relative;overflow:hidden}
@@ -445,7 +445,7 @@ section{position:relative}
 .pro-creds .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);width:92px;padding-top:3px}
 .pro-text p{margin:0 0 1.1em;color:var(--ink-soft);font-size:clamp(15px,1.2vw,17.5px);line-height:1.7;max-width:60ch}
 .pro-text p:first-child{font-size:clamp(17px,1.45vw,21px);color:var(--ink);line-height:1.6}
-@media(max-width:860px){.pro{grid-template-columns:1fr}}
+
 .pro+.pro{margin-top:clamp(56px,7vw,110px)}
 .pro-years{display:flex;align-items:baseline;gap:14px;margin-top:clamp(26px,3vw,38px);padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .pro-years .num{font-family:var(--display);font-weight:500;font-size:clamp(54px,6vw,88px);line-height:.9;letter-spacing:-.03em;color:var(--accent)}
@@ -455,7 +455,7 @@ section{position:relative}
 .pro-areas h4{font-family:var(--display);font-weight:500;font-size:clamp(18px,1.5vw,22px);letter-spacing:-.01em;color:var(--ink);margin:0 0 6px}
 .pro-areas p{margin:0!important;font-size:14.5px!important;line-height:1.6!important;color:var(--ink-soft)!important}
 .pro-areas-k{margin-top:clamp(30px,3.4vw,44px);font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
-@media(max-width:620px){.pro-areas{grid-template-columns:1fr}}
+
 .lang-sw{display:flex;gap:6px;align-items:center;padding:4px;border:1px solid var(--line)}
 .lang-btn{appearance:none;border:0;background:none;padding:0;width:28px;height:20px;cursor:pointer;opacity:.4;filter:grayscale(.6);transition:opacity .2s,filter .2s,outline-color .2s;outline:1px solid transparent;outline-offset:2px}
 .lang-btn svg{display:block;width:100%;height:100%}
@@ -515,7 +515,7 @@ section{position:relative}
 .areas-title .serif-i{font-style:italic;color:#5A4410}
 .areas-sub{margin:0;max-width:44ch;font-size:clamp(15px,1.3vw,18px);line-height:1.6;color:rgba(40,28,8,.74);
   padding-bottom:6px;padding-left:clamp(0px,2vw,32px);border-left:1px solid rgba(58,38,8,.2)}
-@media(max-width:760px){.areas-head{grid-template-columns:1fr;gap:18px;align-items:start}.areas-sub{padding-left:0;border-left:none}}
+
 .area:last-child:nth-child(3n+2){grid-column:span 2}
 .areas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(58,38,8,.22);border:1px solid rgba(58,38,8,.28);margin-top:clamp(36px,4.5vw,56px)}
 .area{background:rgba(20,14,6,.92);
@@ -554,7 +554,7 @@ section{position:relative}
 .am-list li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;border:1px solid var(--accent);transform:rotate(45deg)}
 .am-foot{margin-top:32px;padding-top:24px;border-top:1px solid rgba(245,203,69,.18);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
 .am-foot p{font-size:14px;color:var(--muted);max-width:30ch}
-@media(max-width:560px){.am-foot{flex-direction:column;align-items:stretch}.am-foot .btn{justify-content:center}}
+
 .area:hover{background:rgba(245,203,69,.16);transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(0,0,0,.8)}
 .area:hover .area-n{color:#fff}
 .area:hover .area p{color:rgba(255,255,255,.82)}
@@ -636,7 +636,7 @@ section{position:relative}
 @keyframes waon{0%{box-shadow:0 0 0 0 rgba(61,220,132,.55)}100%{box-shadow:0 0 0 7px rgba(61,220,132,0)}}
 html.lite .wa-float{backdrop-filter:none;-webkit-backdrop-filter:none}
 @media(prefers-reduced-motion:reduce){.wa-float .wa-ic::after,.wa-float .wa-on{animation:none}}
-@media(max-width:620px){.wa-float{right:16px;bottom:16px;padding:5px;gap:0}.wa-float .wa-txt{display:none}.wa-float .wa-ic{width:48px;height:48px}}
+
 
 /* reveal */
 .reveal{opacity:0;transform:translateY(30px);filter:blur(8px);transition:opacity .9s cubic-bezier(.2,.7,.3,1),transform .9s cubic-bezier(.2,.7,.3,1),filter .9s cubic-bezier(.2,.7,.3,1)}
@@ -675,7 +675,10 @@ html:not(.lite) .area.tilt{transition:transform .12s ease-out,background .3s,box
 .st-ic{width:16px;height:16px;display:block}
 .st-ic.pause{display:none}
 .sound-toggle.playing .st-ic.play{display:none}.sound-toggle.playing .st-ic.pause{display:block}
-.st-meta{display:flex;flex-direction:column;gap:3px;min-width:0}
+.st-meta{display:flex;flex-direction:column;gap:3px;min-width:0;white-space:nowrap;text-align:left}
+.sound-toggle,.wa-float{white-space:nowrap;-webkit-font-smoothing:antialiased;transform:translateZ(0);backface-visibility:hidden}
+.st-row{display:flex;align-items:center;gap:8px}.st-top,.wa-top{line-height:1}
+.btn{white-space:nowrap;-webkit-font-smoothing:antialiased}
 .st-top{display:flex;align-items:center;gap:8px;font-size:9.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,232,203,.6)}
 .st-live{width:6px;height:6px;border-radius:50%;background:rgba(243,232,203,.35);transition:background .3s}
 .sound-toggle.playing .st-live{background:#ff4d3d;box-shadow:0 0 0 0 rgba(255,77,61,.6);animation:stlive 1.6s ease-out infinite}
@@ -692,11 +695,11 @@ html:not(.lite) .area.tilt{transition:transform .12s ease-out,background .3s,box
 @keyframes stspin{to{transform:rotate(360deg)}}
 @keyframes stlive{0%{box-shadow:0 0 0 0 rgba(255,77,61,.55)}100%{box-shadow:0 0 0 7px rgba(255,77,61,0)}}
 html.lite .sound-toggle{backdrop-filter:none;-webkit-backdrop-filter:none}
-@media(max-width:620px){.sound-toggle{left:16px;bottom:16px;padding:5px;gap:0}.st-meta{display:none}.st-disc{width:48px;height:48px}}
+
 @media(prefers-reduced-motion:reduce){.sound-toggle.playing .st-disc::after,.sound-toggle.playing .st-live,.sound-toggle.playing .eq i{animation:none}}
 
 
-/* Reunião gratuita */
+/* Reunião */
 .meet{position:relative;overflow:hidden}
 .meet-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
 .meet-badge{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
@@ -711,43 +714,19 @@ html.lite .sound-toggle{backdrop-filter:none;-webkit-backdrop-filter:none}
 .meet-list .mn{font-family:var(--display);font-style:italic;font-size:clamp(28px,3vw,40px);line-height:1;color:var(--accent);min-width:1.6em}
 .meet-list h3{font-family:var(--sans);font-size:clamp(17px,1.5vw,20px);font-weight:600;color:var(--ink);margin:0 0 6px;letter-spacing:.01em}
 .meet-list p{margin:0;font-size:15px;line-height:1.55;color:rgba(242,231,201,.68);max-width:46ch}
-@media(max-width:860px){.meet-grid{grid-template-columns:1fr}}
+
 
 /* perf: brilhos já são gradientes suaves — blur extra só custava repintura */
 .atmos-glow,.hero-anim .g1,.hero-anim .g2,.hero-anim .g3,.sec-glow{filter:none!important}
 .atmos-glow,.hero-anim .g1,.hero-anim .g2,.hero-anim .g3{will-change:transform}
 /* ---------- Responsive ---------- */
-@media(max-width:620px){.lang-btn{position:relative}.lang-btn::after{content:"";position:absolute;inset:-12px -6px}.ci-link{display:inline-flex;align-items:center;min-height:44px}}
-@media(max-width:980px){
-  .nav-links{display:none}
-  .nav-cta .btn{display:none}
-  .menu-btn{display:flex}
-  .about-body{grid-template-columns:1fr}
-  .areas-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.area:last-child:nth-child(3n+2){grid-column:auto}.area:last-child:nth-child(odd){grid-column:span 2}
-  .contact-grid{grid-template-columns:1fr}
-}
-@media(max-width:620px){
-  body{font-size:16px}
-  .stats{grid-template-columns:1fr}
-  .stat{border-right:0;border-bottom:1px solid var(--line);padding:24px 0}
-  .stat:last-child{border-bottom:0}
-  .areas-grid{grid-template-columns:1fr}.area:last-child:nth-child(odd){grid-column:auto}
-  .member.lead-card .ph{min-height:280px}
-  .form{grid-template-columns:1fr}
-  .nav-inner,.nav.scrolled .nav-inner{height:76px}
-  .brand-logo{height:50px}.nav.scrolled .brand-logo{height:42px}
-  .nav-cta{gap:10px}
-  .hero{padding-top:76px;min-height:100svh}
-  .hero h1{font-size:clamp(34px,10vw,44px)!important;line-height:1.06!important}
-  .about-statement{font-size:clamp(22px,6.4vw,28px)!important;line-height:1.25!important}
-  .areas-title{font-size:clamp(26px,7.6vw,32px)}
-  .area{padding:24px 20px}
-  .mvv-st{font-size:18px}
-  .sec{padding-top:56px!important;padding-bottom:56px!important}
-  .am-box,.area-modal .am-panel{max-height:calc(100svh - 32px)}
-}
-@media(max-width:380px){.brand-logo{height:42px!important}.lang-btn{width:24px;height:17px}}
-@media(max-width:620px){.brand-logo{height:50px!important}.nav.scrolled .brand-logo{height:42px!important}}
+
+
+
+
+
+
+html,body{max-width:100%;overflow-x:clip}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{-webkit-tap-highlight-color:transparent;text-rendering:optimizeLegibility}
 html.lite .atmos-glow,html.lite .glow,html.lite .beam{filter:none!important;mix-blend-mode:normal!important;will-change:auto!important;opacity:.55}
@@ -755,20 +734,14 @@ html.lite .nav,html.lite .nav.scrolled{backdrop-filter:none!important;-webkit-ba
 html.lite .area{will-change:auto!important;transform:none!important}
 html.lite .atmos-parallax{transform:none!important}
 #informativo,#contato,#rodape{content-visibility:auto;contain-intrinsic-size:auto 1400px}
-@media(max-width:620px){
-  .hero h1{text-wrap:balance;letter-spacing:-.025em}
-  p{text-wrap:pretty}
-  .btn,.lang-btn,.menu-btn,.area{touch-action:manipulation}
-  .menu-btn{min-width:44px;min-height:44px}
-  input,select,textarea{font-size:16px!important}
-}
+
 
 @media(min-width:2200px){body{zoom:1.2}}
 @media(min-width:2800px){body{zoom:1.45}}
 @media(min-width:3400px){body{zoom:1.75}}
 img{image-rendering:auto}
-.brand-logo{image-rendering:-webkit-optimize-contrast}
 </style>
+<link rel="stylesheet" href="mobile.css">
 <link rel="preconnect" href="https://playerservices.streamtheworld.com"><link rel="dns-prefetch" href="https://playerservices.streamtheworld.com">
 <link rel="preconnect" href="https://api.whatsapp.com"><link rel="dns-prefetch" href="https://web.whatsapp.com">
 </head>
@@ -798,7 +771,7 @@ img{image-rendering:auto}
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="#top" class="brand" aria-label="Vértice Assessoria">
-      <img class="brand-logo" src="assets/vertice-logo-h-dark.png" alt="Vértice Assessoria" style="height: 68px" />
+      <img class="brand-logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMjUgLTEyIDIwNjIgNDM2Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSI3MDAiIHkxPSI2MCIgeDI9Ijk2MCIgeTI9IjMwMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0UyQjg2MCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0EyNzYyQSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iZzIiIHgxPSI0MzgiIHkxPSI2MDAiIHgyPSIxMjE1IiB5Mj0iMTgwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjQjg4OTNBIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI0REQjI2NCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0E1N0EyRSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iZzMiIHgxPSIwIiB5MT0iMCIgeDI9IjEzODAiIHkyPSIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRDRBOTU1Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI0E5ODAyRiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0Q0QTk1NSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMjAgLTQpIHNjYWxlKDAuNTQxOTM1NDgzODcwOTY3OCkiPjxwYXRoIGZpbGw9IiNGM0U3Q0MiIGQ9Ik0yMzAgNjdINDY2TDY1NiAzOTBDNTkwIDQzMiA1MzggNDc2IDQ5NiA1MjNaIj48L3BhdGg+CjxwYXRoIGZpbGw9InVybCgjZykiIGQ9Ik02MzMgMzA3TDg0MCAxMEw5NzcgMjI3TDkwMSAyNThMODM2IDE1MEw2NzYgMzgwWiI+PC9wYXRoPgo8cGF0aCBmaWxsPSJ1cmwoI2cyKSIgZD0iTTQzOCA2MDhDNjIwIDQwMCA5MDAgMjUwIDEyMTUgMTc4Qzk2MCAyNDAgNzAwIDM4MCA0MzggNjA4WiI+PC9wYXRoPgo8cGF0aCBmaWxsPSIjRjNFN0NDIiBkPSJNNTIyIDU2MEM1NjUgNTI4IDYwNyA1MDAgNjUwIDQ3NUw3MDYgNTcwTDg0MSAzNjNDOTAwIDMzMCA5NjAgMzAwIDEwMjUgMjcyTDcwNCA3ODVINjUyWiI+PC9wYXRoPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NjAgLTc4MCkiPjxwYXRoIGZpbGw9IiNGM0U3Q0MiIGQ9Ik0xMjQuODAgMTA1MUw5Ny4zNiAxMDUxTDEyIDg1N0w0MS45MyA4NTdMMTIwLjM2IDEwMzYuMDNMMTAzLjE4IDEwMzYuMDNMMTgyLjE3IDg1N0wyMDkuODggODU3TDEyNC44MCAxMDUxWk00MDUuMzUgMTA1MUwyNjQuNTYgMTA1MUwyNjQuNTYgODU3TDQwMS40NyA4NTdMNDAxLjQ3IDg4MS4xMUwyOTIuMjcgODgxLjExTDI5Mi4yNyAxMDI2Ljg5TDQwNS4zNSAxMDI2Ljg5TDQwNS4zNSAxMDUxWk0zODkuNTUgOTY0LjI1TDI4OS43OCA5NjQuMjVMMjg5Ljc4IDk0MC43MEwzODkuNTUgOTQwLjcwTDM4OS41NSA5NjQuMjVaTTMzNy4xNyA4NDEuMjBMMzEyLjIzIDg0MS4yMEwzNDkuOTIgODA1LjE3TDM4My43MyA4MDUuMTdMMzM3LjE3IDg0MS4yMFpNNTAzLjgyIDEwNTFMNDc2LjEwIDEwNTFMNDc2LjEwIDg1N0w1NTEuNzYgODU3UTU4OS40NSA4NTcgNjExLjA3IDg3NC44OFE2MzIuNjkgODkyLjc1IDYzMi42OSA5MjQuNjJMNjMyLjY5IDkyNC42MlE2MzIuNjkgOTQ1LjY5IDYyMi45OSA5NjAuNzlRNjEzLjI5IDk3NS44OSA1OTUuMjcgOTgzLjkzUTU3Ny4yNiA5OTEuOTcgNTUxLjc2IDk5MS45N0w1NTEuNzYgOTkxLjk3TDQ5MS4zNCA5OTEuOTdMNTAzLjgyIDk3OS4yMkw1MDMuODIgMTA1MVpNNjM2LjAxIDEwNTFMNjA1LjgwIDEwNTFMNTU2LjQ3IDk4MC42MUw1ODYuMTMgOTgwLjYxTDYzNi4wMSAxMDUxWk01MDMuODIgODY3LjI1TDUwMy44MiA5ODEuOTlMNDkxLjM0IDk2OC40MUw1NTAuOTMgOTY4LjQxUTU3Ny41NCA5NjguNDEgNTkxLjI1IDk1Ni45MVE2MDQuOTcgOTQ1LjQxIDYwNC45NyA5MjQuNjJMNjA0Ljk3IDkyNC42MlE2MDQuOTcgOTAzLjg0IDU5MS4yNSA4OTIuNDdRNTc3LjU0IDg4MS4xMSA1NTAuOTMgODgxLjExTDU1MC45MyA4ODEuMTFMNDkxLjM0IDg4MS4xMUw1MDMuODIgODY3LjI1Wk03NjkuNDAgMTA1MUw3NDEuOTYgMTA1MUw3NDEuOTYgODgxLjExTDY3NS40NSA4ODEuMTFMNjc1LjQ1IDg1N0w4MzUuOTIgODU3TDgzNS45MiA4ODEuMTFMNzY5LjQwIDg4MS4xMUw3NjkuNDAgMTA1MVpNOTE5LjcwIDEwNTFMODkxLjk4IDEwNTFMODkxLjk4IDg1N0w5MTkuNzAgODU3TDkxOS43MCAxMDUxWk0xMDkwLjUwIDEwNTMuMjJMMTA5MC41MCAxMDUzLjIyUTEwNjguMzMgMTA1My4yMiAxMDQ5LjYyIDEwNDUuODdRMTAzMC45MSAxMDM4LjUzIDEwMTcuMTkgMTAyNS4wOVExMDAzLjQ3IDEwMTEuNjUgOTk1LjcxIDk5My42M1E5ODcuOTUgOTc1LjYyIDk4Ny45NSA5NTRMOTg3Ljk1IDk1NFE5ODcuOTUgOTMyLjM4IDk5NS43MSA5MTQuMzdRMTAwMy40NyA4OTYuMzUgMTAxNy4zMyA4ODIuOTFRMTAzMS4xOSA4NjkuNDcgMTA0OS45MCA4NjIuMTNRMTA2OC42MCA4NTQuNzggMTA5MC43NyA4NTQuNzhMMTA5MC43NyA4NTQuNzhRMTExMy4yMiA4NTQuNzggMTEzMi4yMSA4NjIuNDBRMTE1MS4xOSA4NzAuMDMgMTE2NC40OSA4ODQuOTlMMTE2NC40OSA4ODQuOTlMMTE0Ni40OCA5MDIuNDVRMTEzNS4zOSA4OTAuODEgMTEyMS41NCA4ODUuMTNRMTEwNy42OCA4NzkuNDUgMTA5MS44OCA4NzkuNDVMMTA5MS44OCA4NzkuNDVRMTA3NS41MyA4NzkuNDUgMTA2MS41NCA4ODQuOTlRMTA0Ny41NCA4OTAuNTMgMTAzNy4yOSA5MDAuNTFRMTAyNy4wMyA5MTAuNDkgMTAyMS4zNSA5MjQuMjFRMTAxNS42NyA5MzcuOTMgMTAxNS42NyA5NTRMMTAxNS42NyA5NTRRMTAxNS42NyA5NzAuMDcgMTAyMS4zNSA5ODMuNzlRMTAyNy4wMyA5OTcuNTEgMTAzNy4yOSAxMDA3LjQ5UTEwNDcuNTQgMTAxNy40NyAxMDYxLjU0IDEwMjMuMDFRMTA3NS41MyAxMDI4LjU1IDEwOTEuODggMTAyOC41NUwxMDkxLjg4IDEwMjguNTVRMTEwNy42OCAxMDI4LjU1IDExMjEuNTQgMTAyMi44N1ExMTM1LjM5IDEwMTcuMTkgMTE0Ni40OCAxMDA1LjI3TDExNDYuNDggMTAwNS4yN0wxMTY0LjQ5IDEwMjIuNzNRMTE1MS4xOSAxMDM3LjcwIDExMzIuMjEgMTA0NS40NlExMTEzLjIyIDEwNTMuMjIgMTA5MC41MCAxMDUzLjIyWk0xMzY4LjAwIDEwNTFMMTIyNy4yMSAxMDUxTDEyMjcuMjEgODU3TDEzNjQuMTIgODU3TDEzNjQuMTIgODgxLjExTDEyNTQuOTMgODgxLjExTDEyNTQuOTMgMTAyNi44OUwxMzY4LjAwIDEwMjYuODlMMTM2OC4wMCAxMDUxWk0xMzUyLjIwIDk2NC4yNUwxMjUyLjQzIDk2NC4yNUwxMjUyLjQzIDk0MC43MEwxMzUyLjIwIDk0MC43MEwxMzUyLjIwIDk2NC4yNVoiPjwvcGF0aD48cGF0aCBmaWxsPSJ1cmwoI2czKSIgZD0iTTI3MC4wOSAxMTgzTDI2MiAxMTgzTDI4Ni45MSAxMTI4TDI5NC42OSAxMTI4TDMxOS42NyAxMTgzTDMxMS40MiAxMTgzTDI4OS4xOSAxMTMyLjQwTDI5Mi4zMyAxMTMyLjQwTDI3MC4wOSAxMTgzWk0zMDcuOTYgMTE2OS4yNUwyNzIuNjEgMTE2OS4yNUwyNzQuNzMgMTE2Mi45NkwzMDUuNjkgMTE2Mi45NkwzMDcuOTYgMTE2OS4yNVpNMzgyLjcxIDExODMuNjNMMzgyLjcxIDExODMuNjNRMzc2LjQyIDExODMuNjMgMzcwLjY5IDExODEuNzBRMzY0Ljk1IDExNzkuNzggMzYxLjY1IDExNzYuNzFMMzYxLjY1IDExNzYuNzFMMzY0LjU2IDExNzAuNTlRMzY3LjcwIDExNzMuMzQgMzcyLjU3IDExNzUuMTRRMzc3LjQ0IDExNzYuOTUgMzgyLjcxIDExNzYuOTVMMzgyLjcxIDExNzYuOTVRMzg3LjUwIDExNzYuOTUgMzkwLjQ5IDExNzUuODVRMzkzLjQ3IDExNzQuNzUgMzk0Ljg5IDExNzIuODNRMzk2LjMwIDExNzAuOTAgMzk2LjMwIDExNjguNDZMMzk2LjMwIDExNjguNDZRMzk2LjMwIDExNjUuNjQgMzk0LjQ1IDExNjMuOTFRMzkyLjYxIDExNjIuMTggMzg5LjY2IDExNjEuMTJRMzg2LjcxIDExNjAuMDYgMzgzLjE4IDExNTkuMjdRMzc5LjY0IDExNTguNDkgMzc2LjA3IDExNTcuNDJRMzcyLjQ5IDExNTYuMzYgMzY5LjU1IDExNTQuNzFRMzY2LjYwIDExNTMuMDYgMzY0Ljc5IDExNTAuMjhRMzYyLjk5IDExNDcuNDkgMzYyLjk5IDExNDMuMDlMMzYyLjk5IDExNDMuMDlRMzYyLjk5IDExMzguODQgMzY1LjIzIDExMzUuMjdRMzY3LjQ2IDExMzEuNjkgMzcyLjE0IDExMjkuNTNRMzc2LjgxIDExMjcuMzcgMzg0LjA0IDExMjcuMzdMMzg0LjA0IDExMjcuMzdRMzg4Ljg0IDExMjcuMzcgMzkzLjU1IDExMjguNjNRMzk4LjI2IDExMjkuODkgNDAxLjcyIDExMzIuMjRMNDAxLjcyIDExMzIuMjRMMzk5LjEzIDExMzguNTNRMzk1LjU5IDExMzYuMTcgMzkxLjY2IDExMzUuMTFRMzg3Ljc0IDExMzQuMDUgMzg0LjA0IDExMzQuMDVMMzg0LjA0IDExMzQuMDVRMzc5LjQxIDExMzQuMDUgMzc2LjQyIDExMzUuMjNRMzczLjQ0IDExMzYuNDEgMzcyLjA2IDExMzguMzdRMzcwLjY5IDExNDAuMzQgMzcwLjY5IDExNDIuNzdMMzcwLjY5IDExNDIuNzdRMzcwLjY5IDExNDUuNjggMzcyLjUzIDExNDcuNDFRMzc0LjM4IDExNDkuMTQgMzc3LjMzIDExNTAuMTZRMzgwLjI3IDExNTEuMTggMzgzLjgxIDExNTIuMDBRMzg3LjM0IDExNTIuODMgMzkwLjkyIDExNTMuODVRMzk0LjQ5IDExNTQuODcgMzk3LjQ0IDExNTYuNTJRNDAwLjM5IDExNTguMTcgNDAyLjE5IDExNjAuOTJRNDA0IDExNjMuNjcgNDA0IDExNjcuOTlMNDA0IDExNjcuOTlRNDA0IDExNzIuMTYgNDAxLjcyIDExNzUuNzNRMzk5LjQ0IDExNzkuMzEgMzk0LjY5IDExODEuNDdRMzg5Ljk0IDExODMuNjMgMzgyLjcxIDExODMuNjNaTTQ3MC4zNCAxMTgzLjYzTDQ3MC4zNCAxMTgzLjYzUTQ2NC4wNSAxMTgzLjYzIDQ1OC4zMSAxMTgxLjcwUTQ1Mi41OCAxMTc5Ljc4IDQ0OS4yOCAxMTc2LjcxTDQ0OS4yOCAxMTc2LjcxTDQ1Mi4xOSAxMTcwLjU5UTQ1NS4zMyAxMTczLjM0IDQ2MC4yMCAxMTc1LjE0UTQ2NS4wNyAxMTc2Ljk1IDQ3MC4zNCAxMTc2Ljk1TDQ3MC4zNCAxMTc2Ljk1UTQ3NS4xMyAxMTc2Ljk1IDQ3OC4xMSAxMTc1Ljg1UTQ4MS4xMCAxMTc0Ljc1IDQ4Mi41MSAxMTcyLjgzUTQ4My45MyAxMTcwLjkwIDQ4My45MyAxMTY4LjQ2TDQ4My45MyAxMTY4LjQ2UTQ4My45MyAxMTY1LjY0IDQ4Mi4wOCAxMTYzLjkxUTQ4MC4yNCAxMTYyLjE4IDQ3Ny4yOSAxMTYxLjEyUTQ3NC4zNCAxMTYwLjA2IDQ3MC44MSAxMTU5LjI3UTQ2Ny4yNyAxMTU4LjQ5IDQ2My43MCAxMTU3LjQyUTQ2MC4xMiAxMTU2LjM2IDQ1Ny4xOCAxMTU0LjcxUTQ1NC4yMyAxMTUzLjA2IDQ1Mi40MiAxMTUwLjI4UTQ1MC42MSAxMTQ3LjQ5IDQ1MC42MSAxMTQzLjA5TDQ1MC42MSAxMTQzLjA5UTQ1MC42MSAxMTM4Ljg0IDQ1Mi44NSAxMTM1LjI3UTQ1NS4wOSAxMTMxLjY5IDQ1OS43NyAxMTI5LjUzUTQ2NC40NCAxMTI3LjM3IDQ3MS42NyAxMTI3LjM3TDQ3MS42NyAxMTI3LjM3UTQ3Ni40NiAxMTI3LjM3IDQ4MS4xOCAxMTI4LjYzUTQ4NS44OSAxMTI5Ljg5IDQ4OS4zNSAxMTMyLjI0TDQ4OS4zNSAxMTMyLjI0TDQ4Ni43NiAxMTM4LjUzUTQ4My4yMiAxMTM2LjE3IDQ3OS4yOSAxMTM1LjExUTQ3NS4zNiAxMTM0LjA1IDQ3MS42NyAxMTM0LjA1TDQ3MS42NyAxMTM0LjA1UTQ2Ny4wNCAxMTM0LjA1IDQ2NC4wNSAxMTM1LjIzUTQ2MS4wNiAxMTM2LjQxIDQ1OS42OSAxMTM4LjM3UTQ1OC4zMSAxMTQwLjM0IDQ1OC4zMSAxMTQyLjc3TDQ1OC4zMSAxMTQyLjc3UTQ1OC4zMSAxMTQ1LjY4IDQ2MC4xNiAxMTQ3LjQxUTQ2Mi4wMSAxMTQ5LjE0IDQ2NC45NSAxMTUwLjE2UTQ2Ny45MCAxMTUxLjE4IDQ3MS40NCAxMTUyLjAwUTQ3NC45NyAxMTUyLjgzIDQ3OC41NSAxMTUzLjg1UTQ4Mi4xMiAxMTU0Ljg3IDQ4NS4wNyAxMTU2LjUyUTQ4OC4wMSAxMTU4LjE3IDQ4OS44MiAxMTYwLjkyUTQ5MS42MyAxMTYzLjY3IDQ5MS42MyAxMTY3Ljk5TDQ5MS42MyAxMTY3Ljk5UTQ5MS42MyAxMTcyLjE2IDQ4OS4zNSAxMTc1LjczUTQ4Ny4wNyAxMTc5LjMxIDQ4Mi4zMiAxMTgxLjQ3UTQ3Ny41NiAxMTgzLjYzIDQ3MC4zNCAxMTgzLjYzWk01ODEuODUgMTE4M0w1NDEuOTQgMTE4M0w1NDEuOTQgMTEyOEw1ODAuNzUgMTEyOEw1ODAuNzUgMTEzNC44NEw1NDkuNzkgMTEzNC44NEw1NDkuNzkgMTE3Ni4xNkw1ODEuODUgMTE3Ni4xNkw1ODEuODUgMTE4M1pNNTc3LjM3IDExNTguNDFMNTQ5LjA5IDExNTguNDFMNTQ5LjA5IDExNTEuNzNMNTc3LjM3IDExNTEuNzNMNTc3LjM3IDExNTguNDFaTTY0OS40NCAxMTgzLjYzTDY0OS40NCAxMTgzLjYzUTY0My4xNiAxMTgzLjYzIDYzNy40MiAxMTgxLjcwUTYzMS42OSAxMTc5Ljc4IDYyOC4zOSAxMTc2LjcxTDYyOC4zOSAxMTc2LjcxTDYzMS4yOSAxMTcwLjU5UTYzNC40NCAxMTczLjM0IDYzOS4zMSAxMTc1LjE0UTY0NC4xOCAxMTc2Ljk1IDY0OS40NCAxMTc2Ljk1TDY0OS40NCAxMTc2Ljk1UTY1NC4yNCAxMTc2Ljk1IDY1Ny4yMiAxMTc1Ljg1UTY2MC4yMSAxMTc0Ljc1IDY2MS42MiAxMTcyLjgzUTY2My4wNCAxMTcwLjkwIDY2My4wNCAxMTY4LjQ2TDY2My4wNCAxMTY4LjQ2UTY2My4wNCAxMTY1LjY0IDY2MS4xOSAxMTYzLjkxUTY1OS4zNCAxMTYyLjE4IDY1Ni40MCAxMTYxLjEyUTY1My40NSAxMTYwLjA2IDY0OS45MSAxMTU5LjI3UTY0Ni4zOCAxMTU4LjQ5IDY0Mi44MCAxMTU3LjQyUTYzOS4yMyAxMTU2LjM2IDYzNi4yOCAxMTU0LjcxUTYzMy4zNCAxMTUzLjA2IDYzMS41MyAxMTUwLjI4UTYyOS43MiAxMTQ3LjQ5IDYyOS43MiAxMTQzLjA5TDYyOS43MiAxMTQzLjA5UTYyOS43MiAxMTM4Ljg0IDYzMS45NiAxMTM1LjI3UTYzNC4yMCAxMTMxLjY5IDYzOC44OCAxMTI5LjUzUTY0My41NSAxMTI3LjM3IDY1MC43OCAxMTI3LjM3TDY1MC43OCAxMTI3LjM3UTY1NS41NyAxMTI3LjM3IDY2MC4yOSAxMTI4LjYzUTY2NSAxMTI5Ljg5IDY2OC40NiAxMTMyLjI0TDY2OC40NiAxMTMyLjI0TDY2NS44NiAxMTM4LjUzUTY2Mi4zMyAxMTM2LjE3IDY1OC40MCAxMTM1LjExUTY1NC40NyAxMTM0LjA1IDY1MC43OCAxMTM0LjA1TDY1MC43OCAxMTM0LjA1UTY0Ni4xNCAxMTM0LjA1IDY0My4xNiAxMTM1LjIzUTY0MC4xNyAxMTM2LjQxIDYzOC44MCAxMTM4LjM3UTYzNy40MiAxMTQwLjM0IDYzNy40MiAxMTQyLjc3TDYzNy40MiAxMTQyLjc3UTYzNy40MiAxMTQ1LjY4IDYzOS4yNyAxMTQ3LjQxUTY0MS4xMSAxMTQ5LjE0IDY0NC4wNiAxMTUwLjE2UTY0Ny4wMSAxMTUxLjE4IDY1MC41NCAxMTUyLjAwUTY1NC4wOCAxMTUyLjgzIDY1Ny42NSAxMTUzLjg1UTY2MS4yMyAxMTU0Ljg3IDY2NC4xNyAxMTU2LjUyUTY2Ny4xMiAxMTU4LjE3IDY2OC45MyAxMTYwLjkyUTY3MC43NCAxMTYzLjY3IDY3MC43NCAxMTY3Ljk5TDY3MC43NCAxMTY3Ljk5UTY3MC43NCAxMTcyLjE2IDY2OC40NiAxMTc1LjczUTY2Ni4xOCAxMTc5LjMxIDY2MS40MiAxMTgxLjQ3UTY1Ni42NyAxMTgzLjYzIDY0OS40NCAxMTgzLjYzWk03MzcuMDcgMTE4My42M0w3MzcuMDcgMTE4My42M1E3MzAuNzkgMTE4My42MyA3MjUuMDUgMTE4MS43MFE3MTkuMzEgMTE3OS43OCA3MTYuMDEgMTE3Ni43MUw3MTYuMDEgMTE3Ni43MUw3MTguOTIgMTE3MC41OVE3MjIuMDYgMTE3My4zNCA3MjYuOTQgMTE3NS4xNFE3MzEuODEgMTE3Ni45NSA3MzcuMDcgMTE3Ni45NUw3MzcuMDcgMTE3Ni45NVE3NDEuODYgMTE3Ni45NSA3NDQuODUgMTE3NS44NVE3NDcuODQgMTE3NC43NSA3NDkuMjUgMTE3Mi44M1E3NTAuNjYgMTE3MC45MCA3NTAuNjYgMTE2OC40Nkw3NTAuNjYgMTE2OC40NlE3NTAuNjYgMTE2NS42NCA3NDguODIgMTE2My45MVE3NDYuOTcgMTE2Mi4xOCA3NDQuMDMgMTE2MS4xMlE3NDEuMDggMTE2MC4wNiA3MzcuNTQgMTE1OS4yN1E3MzQuMDEgMTE1OC40OSA3MzAuNDMgMTE1Ny40MlE3MjYuODYgMTE1Ni4zNiA3MjMuOTEgMTE1NC43MVE3MjAuOTYgMTE1My4wNiA3MTkuMTYgMTE1MC4yOFE3MTcuMzUgMTE0Ny40OSA3MTcuMzUgMTE0My4wOUw3MTcuMzUgMTE0My4wOVE3MTcuMzUgMTEzOC44NCA3MTkuNTkgMTEzNS4yN1E3MjEuODMgMTEzMS42OSA3MjYuNTAgMTEyOS41M1E3MzEuMTggMTEyNy4zNyA3MzguNDEgMTEyNy4zN0w3MzguNDEgMTEyNy4zN1E3NDMuMjAgMTEyNy4zNyA3NDcuOTEgMTEyOC42M1E3NTIuNjMgMTEyOS44OSA3NTYuMDkgMTEzMi4yNEw3NTYuMDkgMTEzMi4yNEw3NTMuNDkgMTEzOC41M1E3NDkuOTYgMTEzNi4xNyA3NDYuMDMgMTEzNS4xMVE3NDIuMTAgMTEzNC4wNSA3MzguNDEgMTEzNC4wNUw3MzguNDEgMTEzNC4wNVE3MzMuNzcgMTEzNC4wNSA3MzAuNzkgMTEzNS4yM1E3MjcuODAgMTEzNi40MSA3MjYuNDMgMTEzOC4zN1E3MjUuMDUgMTE0MC4zNCA3MjUuMDUgMTE0Mi43N0w3MjUuMDUgMTE0Mi43N1E3MjUuMDUgMTE0NS42OCA3MjYuOTAgMTE0Ny40MVE3MjguNzQgMTE0OS4xNCA3MzEuNjkgMTE1MC4xNlE3MzQuNjQgMTE1MS4xOCA3MzguMTcgMTE1Mi4wMFE3NDEuNzEgMTE1Mi44MyA3NDUuMjggMTE1My44NVE3NDguODYgMTE1NC44NyA3NTEuODAgMTE1Ni41MlE3NTQuNzUgMTE1OC4xNyA3NTYuNTYgMTE2MC45MlE3NTguMzYgMTE2My42NyA3NTguMzYgMTE2Ny45OUw3NTguMzYgMTE2Ny45OVE3NTguMzYgMTE3Mi4xNiA3NTYuMDkgMTE3NS43M1E3NTMuODEgMTE3OS4zMSA3NDkuMDUgMTE4MS40N1E3NDQuMzAgMTE4My42MyA3MzcuMDcgMTE4My42M1pNODMzLjUwIDExODMuNjNMODMzLjUwIDExODMuNjNRODI3LjIxIDExODMuNjMgODIxLjgzIDExODEuNTFRODE2LjQ1IDExNzkuMzkgODEyLjUyIDExNzUuNThRODA4LjU5IDExNzEuNzYgODA2LjM5IDExNjYuNjZRODA0LjE5IDExNjEuNTUgODA0LjE5IDExNTUuNTBMODA0LjE5IDExNTUuNTBRODA0LjE5IDExNDkuNDUgODA2LjM5IDExNDQuMzRRODA4LjU5IDExMzkuMjQgODEyLjUyIDExMzUuNDJRODE2LjQ1IDExMzEuNjEgODIxLjc5IDExMjkuNDlRODI3LjE0IDExMjcuMzcgODMzLjUwIDExMjcuMzdMODMzLjUwIDExMjcuMzdRODM5Ljc5IDExMjcuMzcgODQ1LjA5IDExMjkuNDVRODUwLjM5IDExMzEuNTQgODU0LjM2IDExMzUuMzVRODU4LjMzIDExMzkuMTYgODYwLjQ5IDExNDQuMjZRODYyLjY1IDExNDkuMzcgODYyLjY1IDExNTUuNTBMODYyLjY1IDExNTUuNTBRODYyLjY1IDExNjEuNjMgODYwLjQ5IDExNjYuNzRRODU4LjMzIDExNzEuODQgODU0LjM2IDExNzUuNjVRODUwLjM5IDExNzkuNDYgODQ1LjA5IDExODEuNTVRODM5Ljc5IDExODMuNjMgODMzLjUwIDExODMuNjNaTTgzMy41MCAxMTc2LjY0TDgzMy41MCAxMTc2LjY0UTgzOC4wNiAxMTc2LjY0IDg0MS45NSAxMTc1LjA2UTg0NS44NCAxMTczLjQ5IDg0OC43MCAxMTcwLjYzUTg1MS41NyAxMTY3Ljc2IDg1My4xOCAxMTYzLjkxUTg1NC43OSAxMTYwLjA2IDg1NC43OSAxMTU1LjUwTDg1NC43OSAxMTU1LjUwUTg1NC43OSAxMTUwLjk0IDg1My4xOCAxMTQ3LjA5UTg1MS41NyAxMTQzLjI0IDg0OC43MCAxMTQwLjM4UTg0NS44NCAxMTM3LjUxIDg0MS45NSAxMTM1Ljk0UTgzOC4wNiAxMTM0LjM2IDgzMy41MCAxMTM0LjM2TDgzMy41MCAxMTM0LjM2UTgyOC44NiAxMTM0LjM2IDgyNC45OCAxMTM1Ljk0UTgyMS4wOSAxMTM3LjUxIDgxOC4xOCAxMTQwLjM4UTgxNS4yNyAxMTQzLjI0IDgxMy42NiAxMTQ3LjA5UTgxMi4wNSAxMTUwLjk0IDgxMi4wNSAxMTU1LjUwTDgxMi4wNSAxMTU1LjUwUTgxMi4wNSAxMTYwLjA2IDgxMy42NiAxMTYzLjkxUTgxNS4yNyAxMTY3Ljc2IDgxOC4xOCAxMTcwLjYzUTgyMS4wOSAxMTczLjQ5IDgyNC45OCAxMTc1LjA2UTgyOC44NiAxMTc2LjY0IDgzMy41MCAxMTc2LjY0Wk05MjEuMzYgMTE4M0w5MTMuNTEgMTE4M0w5MTMuNTEgMTEyOEw5MzQuOTYgMTEyOFE5NDUuNjQgMTEyOCA5NTEuNzcgMTEzMy4wN1E5NTcuOTAgMTEzOC4xNCA5NTcuOTAgMTE0Ny4xN0w5NTcuOTAgMTE0Ny4xN1E5NTcuOTAgMTE1My4xNCA5NTUuMTUgMTE1Ny40MlE5NTIuNDAgMTE2MS43MSA5NDcuMjkgMTE2My45OVE5NDIuMTkgMTE2Ni4yNiA5MzQuOTYgMTE2Ni4yNkw5MzQuOTYgMTE2Ni4yNkw5MTcuODMgMTE2Ni4yNkw5MjEuMzYgMTE2Mi42NUw5MjEuMzYgMTE4M1pNOTU4Ljg0IDExODNMOTUwLjI4IDExODNMOTM2LjI5IDExNjMuMDRMOTQ0LjcwIDExNjMuMDRMOTU4Ljg0IDExODNaTTkyMS4zNiAxMTMwLjkxTDkyMS4zNiAxMTYzLjQ0TDkxNy44MyAxMTU5LjU5TDkzNC43MiAxMTU5LjU5UTk0Mi4yNiAxMTU5LjU5IDk0Ni4xNSAxMTU2LjMzUTk1MC4wNCAxMTUzLjA2IDk1MC4wNCAxMTQ3LjE3TDk1MC4wNCAxMTQ3LjE3UTk1MC4wNCAxMTQxLjI4IDk0Ni4xNSAxMTM4LjA2UTk0Mi4yNiAxMTM0Ljg0IDkzNC43MiAxMTM0Ljg0TDkzNC43MiAxMTM0Ljg0TDkxNy44MyAxMTM0Ljg0TDkyMS4zNiAxMTMwLjkxWk0xMDE3LjMyIDExODNMMTAwOS40NiAxMTgzTDEwMDkuNDYgMTEyOEwxMDE3LjMyIDExMjhMMTAxNy4zMiAxMTgzWk0xMDcyLjQyIDExODNMMTA2NC4zMyAxMTgzTDEwODkuMjQgMTEyOEwxMDk3LjAxIDExMjhMMTEyMiAxMTgzTDExMTMuNzUgMTE4M0wxMDkxLjUxIDExMzIuNDBMMTA5NC42NiAxMTMyLjQwTDEwNzIuNDIgMTE4M1pNMTExMC4yOSAxMTY5LjI1TDEwNzQuOTQgMTE2OS4yNUwxMDc3LjA2IDExNjIuOTZMMTEwOC4wMSAxMTYyLjk2TDExMTAuMjkgMTE2OS4yNVoiPjwvcGF0aD4KPHJlY3QgeD0iMjIiIHk9IjExNTAiIHdpZHRoPSIxODgiIGhlaWdodD0iOCIgZmlsbD0idXJsKCNnMykiPjwvcmVjdD48cmVjdCB4PSIxMTc4IiB5PSIxMTUwIiB3aWR0aD0iMTg4IiBoZWlnaHQ9IjgiIGZpbGw9InVybCgjZzMpIj48L3JlY3Q+PC9nPjwvc3ZnPg==" alt="Vértice Assessoria" width="473" height="100" />
     </a>
     <nav class="nav-links">
       <a class="lnk" href="#firma">Sobre Nós</a>
@@ -926,7 +899,7 @@ img{image-rendering:auto}
         </button>
         <button type="button" class="area" data-area="02">
           <span class="area-n">02</span>
-          <h3>Atendimento aos Autônomos</h3>
+          <h3>Atendimento a Autônomos</h3>
           <p>Orientação contábil e fiscal para profissionais autônomos que buscam regularidade e tranquilidade.</p>
           <span class="area-more">Saiba mais <span class="arw">→</span></span>
         </button>
@@ -996,17 +969,17 @@ img{image-rendering:auto}
   </div>
 </section>
 
-<!-- REUNIÃO GRATUITA -->
+<!-- REUNIÃO -->
 <section class="sec sec-dark on-dark meet" id="reuniao">
   <span class="sec-glow" aria-hidden="true"></span>
   <div class="wrap">
     <div class="meet-grid">
       <div class="reveal">
-        <span class="meet-badge"><i></i>Primeiro passo · sem custo</span>
-        <h2 class="meet-title">Reunião <em>gratuita</em> com a nossa equipe.</h2>
-        <p class="meet-lede">Antes de qualquer contratação, conversamos com você para entender o cenário e indicar o caminho mais seguro. Online, para todo o Brasil.</p>
+        <span class="meet-badge"><i></i>Primeiro passo</span>
+        <h2 class="meet-title"><em>Reunião</em> com a nossa equipe.</h2>
+        <p class="meet-lede">Antes de qualquer contratação, conversamos com você para entender o cenário e indicar o caminho mais seguro. Online, em todo o Brasil.</p>
         <div class="meet-cta">
-          <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5522999124012&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20a%20reuni%C3%A3o%20gratuita%20com%20a%20equipe%20V%C3%A9rtice." target="_blank" rel="noopener">Agendar reunião gratuita <span class="arw">→</span></a>
+          <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5522999124012&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20com%20a%20equipe%20V%C3%A9rtice." target="_blank" rel="noopener">Agendar reunião <span class="arw">→</span></a>
           <span class="meet-note">Resposta pelo WhatsApp</span>
         </div>
       </div>
@@ -1027,7 +1000,7 @@ img{image-rendering:auto}
     <div class="sec-head reveal">
       <div>
         <span class="sec-num">Informativo da Semana</span>
-        <h2 class="sec-title">O que mudou, e como afeta você.</h2>
+        <h2 class="sec-title">O que mudou e como isso afeta você.</h2>
       </div>
       <p class="news-intro-p">Selecionamos notícias de fontes oficiais, como Receita Federal, Ministério da Fazenda, STJ e EBC, nas áreas em que atuamos. Toque em uma notícia para ler na íntegra.</p>
     </div>
@@ -1094,7 +1067,8 @@ img{image-rendering:auto}
         <div class="ci-row"><span class="ci-k">Atendimento</span><span class="ci-v">Online em todo o Brasil<span>Reuniões por vídeo e WhatsApp</span></span></div>
         <div class="ci-row"><span class="ci-k">Telefone</span><span class="ci-v"><a href="tel:+5522999124012" class="ci-link">+55 (22) 99912-4012</a><span><a href="https://api.whatsapp.com/send?phone=5522999124012&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20V%C3%A9rtice%20Assessoria." target="_blank" rel="noopener" class="ci-link ci-wa"><svg class="wa-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-1.6c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7.7.7-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.6 9.9 10.3 5.2 16 5.2S26.4 9.9 26.4 15 21.7 24.8 16 24.8zm6.7-6.2c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.8.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.1-.2.2-.3.3-.6.1-.2 0-.4 0-.6-.1-.2-.8-1.8-1-2.5-.3-.7-.5-.6-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.9 5.1.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.2-.6-.4z"/></svg>WhatsApp</a></span></span></div>
         <div class="ci-row"><span class="ci-k">E-mail</span><span class="ci-v"><a href="mailto:sac.verticeassessoria@gmail.com" class="ci-link">sac.verticeassessoria@gmail.com</a></span></div>
-        <div class="ci-row"><span class="ci-k">Horário</span><span class="ci-v">Seg a Sex · 9h às 18h</span></div>
+        <div class="ci-row"><span class="ci-k">Instagram</span><span class="ci-v"><a href="https://www.instagram.com/vertice.assessoriacj" target="_blank" rel="noopener" class="ci-link" style="display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" style="flex:none"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle></svg>@vertice.assessoriacj</a></span></div>
+        <div class="ci-row"><span class="ci-k">Horário</span><span class="ci-v">Segunda a sexta · 9h às 18h</span></div>
       </div>
 
       <form class="form reveal" id="contactForm" novalidate>
@@ -1129,7 +1103,7 @@ img{image-rendering:auto}
         </div>
         <div class="form-success" id="formSuccess">
           <h3>Tudo certo!</h3>
-          <p>Abrimos o WhatsApp com a sua mensagem pronta, é só tocar em enviar para falar com a Vértice Assessoria. Se não abrir, chame direto: (22) 99912-4012.</p>
+          <p>Abrimos o WhatsApp com a sua mensagem pronta: é só tocar em "Enviar" para falar com a Vértice Assessoria. Se não abrir, chame direto: (22) 99912-4012.</p>
         </div>
       </form>
     </div>
@@ -1141,13 +1115,14 @@ img{image-rendering:auto}
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <a href="#top" class="brand"><img class="brand-logo footer-logo" src="assets/vertice-logo-h-dark.png" alt="Vértice Assessoria" /></a>
+        <a href="#top" class="brand"><img class="brand-logo footer-logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMjUgLTEyIDIwNjIgNDM2Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSI3MDAiIHkxPSI2MCIgeDI9Ijk2MCIgeTI9IjMwMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0UyQjg2MCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0EyNzYyQSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iZzIiIHgxPSI0MzgiIHkxPSI2MDAiIHgyPSIxMjE1IiB5Mj0iMTgwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjQjg4OTNBIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI0REQjI2NCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0E1N0EyRSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iZzMiIHgxPSIwIiB5MT0iMCIgeDI9IjEzODAiIHkyPSIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRDRBOTU1Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI0E5ODAyRiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0Q0QTk1NSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMjAgLTQpIHNjYWxlKDAuNTQxOTM1NDgzODcwOTY3OCkiPjxwYXRoIGZpbGw9IiNGM0U3Q0MiIGQ9Ik0yMzAgNjdINDY2TDY1NiAzOTBDNTkwIDQzMiA1MzggNDc2IDQ5NiA1MjNaIj48L3BhdGg+CjxwYXRoIGZpbGw9InVybCgjZykiIGQ9Ik02MzMgMzA3TDg0MCAxMEw5NzcgMjI3TDkwMSAyNThMODM2IDE1MEw2NzYgMzgwWiI+PC9wYXRoPgo8cGF0aCBmaWxsPSJ1cmwoI2cyKSIgZD0iTTQzOCA2MDhDNjIwIDQwMCA5MDAgMjUwIDEyMTUgMTc4Qzk2MCAyNDAgNzAwIDM4MCA0MzggNjA4WiI+PC9wYXRoPgo8cGF0aCBmaWxsPSIjRjNFN0NDIiBkPSJNNTIyIDU2MEM1NjUgNTI4IDYwNyA1MDAgNjUwIDQ3NUw3MDYgNTcwTDg0MSAzNjNDOTAwIDMzMCA5NjAgMzAwIDEwMjUgMjcyTDcwNCA3ODVINjUyWiI+PC9wYXRoPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NjAgLTc4MCkiPjxwYXRoIGZpbGw9IiNGM0U3Q0MiIGQ9Ik0xMjQuODAgMTA1MUw5Ny4zNiAxMDUxTDEyIDg1N0w0MS45MyA4NTdMMTIwLjM2IDEwMzYuMDNMMTAzLjE4IDEwMzYuMDNMMTgyLjE3IDg1N0wyMDkuODggODU3TDEyNC44MCAxMDUxWk00MDUuMzUgMTA1MUwyNjQuNTYgMTA1MUwyNjQuNTYgODU3TDQwMS40NyA4NTdMNDAxLjQ3IDg4MS4xMUwyOTIuMjcgODgxLjExTDI5Mi4yNyAxMDI2Ljg5TDQwNS4zNSAxMDI2Ljg5TDQwNS4zNSAxMDUxWk0zODkuNTUgOTY0LjI1TDI4OS43OCA5NjQuMjVMMjg5Ljc4IDk0MC43MEwzODkuNTUgOTQwLjcwTDM4OS41NSA5NjQuMjVaTTMzNy4xNyA4NDEuMjBMMzEyLjIzIDg0MS4yMEwzNDkuOTIgODA1LjE3TDM4My43MyA4MDUuMTdMMzM3LjE3IDg0MS4yMFpNNTAzLjgyIDEwNTFMNDc2LjEwIDEwNTFMNDc2LjEwIDg1N0w1NTEuNzYgODU3UTU4OS40NSA4NTcgNjExLjA3IDg3NC44OFE2MzIuNjkgODkyLjc1IDYzMi42OSA5MjQuNjJMNjMyLjY5IDkyNC42MlE2MzIuNjkgOTQ1LjY5IDYyMi45OSA5NjAuNzlRNjEzLjI5IDk3NS44OSA1OTUuMjcgOTgzLjkzUTU3Ny4yNiA5OTEuOTcgNTUxLjc2IDk5MS45N0w1NTEuNzYgOTkxLjk3TDQ5MS4zNCA5OTEuOTdMNTAzLjgyIDk3OS4yMkw1MDMuODIgMTA1MVpNNjM2LjAxIDEwNTFMNjA1LjgwIDEwNTFMNTU2LjQ3IDk4MC42MUw1ODYuMTMgOTgwLjYxTDYzNi4wMSAxMDUxWk01MDMuODIgODY3LjI1TDUwMy44MiA5ODEuOTlMNDkxLjM0IDk2OC40MUw1NTAuOTMgOTY4LjQxUTU3Ny41NCA5NjguNDEgNTkxLjI1IDk1Ni45MVE2MDQuOTcgOTQ1LjQxIDYwNC45NyA5MjQuNjJMNjA0Ljk3IDkyNC42MlE2MDQuOTcgOTAzLjg0IDU5MS4yNSA4OTIuNDdRNTc3LjU0IDg4MS4xMSA1NTAuOTMgODgxLjExTDU1MC45MyA4ODEuMTFMNDkxLjM0IDg4MS4xMUw1MDMuODIgODY3LjI1Wk03NjkuNDAgMTA1MUw3NDEuOTYgMTA1MUw3NDEuOTYgODgxLjExTDY3NS40NSA4ODEuMTFMNjc1LjQ1IDg1N0w4MzUuOTIgODU3TDgzNS45MiA4ODEuMTFMNzY5LjQwIDg4MS4xMUw3NjkuNDAgMTA1MVpNOTE5LjcwIDEwNTFMODkxLjk4IDEwNTFMODkxLjk4IDg1N0w5MTkuNzAgODU3TDkxOS43MCAxMDUxWk0xMDkwLjUwIDEwNTMuMjJMMTA5MC41MCAxMDUzLjIyUTEwNjguMzMgMTA1My4yMiAxMDQ5LjYyIDEwNDUuODdRMTAzMC45MSAxMDM4LjUzIDEwMTcuMTkgMTAyNS4wOVExMDAzLjQ3IDEwMTEuNjUgOTk1LjcxIDk5My42M1E5ODcuOTUgOTc1LjYyIDk4Ny45NSA5NTRMOTg3Ljk1IDk1NFE5ODcuOTUgOTMyLjM4IDk5NS43MSA5MTQuMzdRMTAwMy40NyA4OTYuMzUgMTAxNy4zMyA4ODIuOTFRMTAzMS4xOSA4NjkuNDcgMTA0OS45MCA4NjIuMTNRMTA2OC42MCA4NTQuNzggMTA5MC43NyA4NTQuNzhMMTA5MC43NyA4NTQuNzhRMTExMy4yMiA4NTQuNzggMTEzMi4yMSA4NjIuNDBRMTE1MS4xOSA4NzAuMDMgMTE2NC40OSA4ODQuOTlMMTE2NC40OSA4ODQuOTlMMTE0Ni40OCA5MDIuNDVRMTEzNS4zOSA4OTAuODEgMTEyMS41NCA4ODUuMTNRMTEwNy42OCA4NzkuNDUgMTA5MS44OCA4NzkuNDVMMTA5MS44OCA4NzkuNDVRMTA3NS41MyA4NzkuNDUgMTA2MS41NCA4ODQuOTlRMTA0Ny41NCA4OTAuNTMgMTAzNy4yOSA5MDAuNTFRMTAyNy4wMyA5MTAuNDkgMTAyMS4zNSA5MjQuMjFRMTAxNS42NyA5MzcuOTMgMTAxNS42NyA5NTRMMTAxNS42NyA5NTRRMTAxNS42NyA5NzAuMDcgMTAyMS4zNSA5ODMuNzlRMTAyNy4wMyA5OTcuNTEgMTAzNy4yOSAxMDA3LjQ5UTEwNDcuNTQgMTAxNy40NyAxMDYxLjU0IDEwMjMuMDFRMTA3NS41MyAxMDI4LjU1IDEwOTEuODggMTAyOC41NUwxMDkxLjg4IDEwMjguNTVRMTEwNy42OCAxMDI4LjU1IDExMjEuNTQgMTAyMi44N1ExMTM1LjM5IDEwMTcuMTkgMTE0Ni40OCAxMDA1LjI3TDExNDYuNDggMTAwNS4yN0wxMTY0LjQ5IDEwMjIuNzNRMTE1MS4xOSAxMDM3LjcwIDExMzIuMjEgMTA0NS40NlExMTEzLjIyIDEwNTMuMjIgMTA5MC41MCAxMDUzLjIyWk0xMzY4LjAwIDEwNTFMMTIyNy4yMSAxMDUxTDEyMjcuMjEgODU3TDEzNjQuMTIgODU3TDEzNjQuMTIgODgxLjExTDEyNTQuOTMgODgxLjExTDEyNTQuOTMgMTAyNi44OUwxMzY4LjAwIDEwMjYuODlMMTM2OC4wMCAxMDUxWk0xMzUyLjIwIDk2NC4yNUwxMjUyLjQzIDk2NC4yNUwxMjUyLjQzIDk0MC43MEwxMzUyLjIwIDk0MC43MEwxMzUyLjIwIDk2NC4yNVoiPjwvcGF0aD48cGF0aCBmaWxsPSJ1cmwoI2czKSIgZD0iTTI3MC4wOSAxMTgzTDI2MiAxMTgzTDI4Ni45MSAxMTI4TDI5NC42OSAxMTI4TDMxOS42NyAxMTgzTDMxMS40MiAxMTgzTDI4OS4xOSAxMTMyLjQwTDI5Mi4zMyAxMTMyLjQwTDI3MC4wOSAxMTgzWk0zMDcuOTYgMTE2OS4yNUwyNzIuNjEgMTE2OS4yNUwyNzQuNzMgMTE2Mi45NkwzMDUuNjkgMTE2Mi45NkwzMDcuOTYgMTE2OS4yNVpNMzgyLjcxIDExODMuNjNMMzgyLjcxIDExODMuNjNRMzc2LjQyIDExODMuNjMgMzcwLjY5IDExODEuNzBRMzY0Ljk1IDExNzkuNzggMzYxLjY1IDExNzYuNzFMMzYxLjY1IDExNzYuNzFMMzY0LjU2IDExNzAuNTlRMzY3LjcwIDExNzMuMzQgMzcyLjU3IDExNzUuMTRRMzc3LjQ0IDExNzYuOTUgMzgyLjcxIDExNzYuOTVMMzgyLjcxIDExNzYuOTVRMzg3LjUwIDExNzYuOTUgMzkwLjQ5IDExNzUuODVRMzkzLjQ3IDExNzQuNzUgMzk0Ljg5IDExNzIuODNRMzk2LjMwIDExNzAuOTAgMzk2LjMwIDExNjguNDZMMzk2LjMwIDExNjguNDZRMzk2LjMwIDExNjUuNjQgMzk0LjQ1IDExNjMuOTFRMzkyLjYxIDExNjIuMTggMzg5LjY2IDExNjEuMTJRMzg2LjcxIDExNjAuMDYgMzgzLjE4IDExNTkuMjdRMzc5LjY0IDExNTguNDkgMzc2LjA3IDExNTcuNDJRMzcyLjQ5IDExNTYuMzYgMzY5LjU1IDExNTQuNzFRMzY2LjYwIDExNTMuMDYgMzY0Ljc5IDExNTAuMjhRMzYyLjk5IDExNDcuNDkgMzYyLjk5IDExNDMuMDlMMzYyLjk5IDExNDMuMDlRMzYyLjk5IDExMzguODQgMzY1LjIzIDExMzUuMjdRMzY3LjQ2IDExMzEuNjkgMzcyLjE0IDExMjkuNTNRMzc2LjgxIDExMjcuMzcgMzg0LjA0IDExMjcuMzdMMzg0LjA0IDExMjcuMzdRMzg4Ljg0IDExMjcuMzcgMzkzLjU1IDExMjguNjNRMzk4LjI2IDExMjkuODkgNDAxLjcyIDExMzIuMjRMNDAxLjcyIDExMzIuMjRMMzk5LjEzIDExMzguNTNRMzk1LjU5IDExMzYuMTcgMzkxLjY2IDExMzUuMTFRMzg3Ljc0IDExMzQuMDUgMzg0LjA0IDExMzQuMDVMMzg0LjA0IDExMzQuMDVRMzc5LjQxIDExMzQuMDUgMzc2LjQyIDExMzUuMjNRMzczLjQ0IDExMzYuNDEgMzcyLjA2IDExMzguMzdRMzcwLjY5IDExNDAuMzQgMzcwLjY5IDExNDIuNzdMMzcwLjY5IDExNDIuNzdRMzcwLjY5IDExNDUuNjggMzcyLjUzIDExNDcuNDFRMzc0LjM4IDExNDkuMTQgMzc3LjMzIDExNTAuMTZRMzgwLjI3IDExNTEuMTggMzgzLjgxIDExNTIuMDBRMzg3LjM0IDExNTIuODMgMzkwLjkyIDExNTMuODVRMzk0LjQ5IDExNTQuODcgMzk3LjQ0IDExNTYuNTJRNDAwLjM5IDExNTguMTcgNDAyLjE5IDExNjAuOTJRNDA0IDExNjMuNjcgNDA0IDExNjcuOTlMNDA0IDExNjcuOTlRNDA0IDExNzIuMTYgNDAxLjcyIDExNzUuNzNRMzk5LjQ0IDExNzkuMzEgMzk0LjY5IDExODEuNDdRMzg5Ljk0IDExODMuNjMgMzgyLjcxIDExODMuNjNaTTQ3MC4zNCAxMTgzLjYzTDQ3MC4zNCAxMTgzLjYzUTQ2NC4wNSAxMTgzLjYzIDQ1OC4zMSAxMTgxLjcwUTQ1Mi41OCAxMTc5Ljc4IDQ0OS4yOCAxMTc2LjcxTDQ0OS4yOCAxMTc2LjcxTDQ1Mi4xOSAxMTcwLjU5UTQ1NS4zMyAxMTczLjM0IDQ2MC4yMCAxMTc1LjE0UTQ2NS4wNyAxMTc2Ljk1IDQ3MC4zNCAxMTc2Ljk1TDQ3MC4zNCAxMTc2Ljk1UTQ3NS4xMyAxMTc2Ljk1IDQ3OC4xMSAxMTc1Ljg1UTQ4MS4xMCAxMTc0Ljc1IDQ4Mi41MSAxMTcyLjgzUTQ4My45MyAxMTcwLjkwIDQ4My45MyAxMTY4LjQ2TDQ4My45MyAxMTY4LjQ2UTQ4My45MyAxMTY1LjY0IDQ4Mi4wOCAxMTYzLjkxUTQ4MC4yNCAxMTYyLjE4IDQ3Ny4yOSAxMTYxLjEyUTQ3NC4zNCAxMTYwLjA2IDQ3MC44MSAxMTU5LjI3UTQ2Ny4yNyAxMTU4LjQ5IDQ2My43MCAxMTU3LjQyUTQ2MC4xMiAxMTU2LjM2IDQ1Ny4xOCAxMTU0LjcxUTQ1NC4yMyAxMTUzLjA2IDQ1Mi40MiAxMTUwLjI4UTQ1MC42MSAxMTQ3LjQ5IDQ1MC42MSAxMTQzLjA5TDQ1MC42MSAxMTQzLjA5UTQ1MC42MSAxMTM4Ljg0IDQ1Mi44NSAxMTM1LjI3UTQ1NS4wOSAxMTMxLjY5IDQ1OS43NyAxMTI5LjUzUTQ2NC40NCAxMTI3LjM3IDQ3MS42NyAxMTI3LjM3TDQ3MS42NyAxMTI3LjM3UTQ3Ni40NiAxMTI3LjM3IDQ4MS4xOCAxMTI4LjYzUTQ4NS44OSAxMTI5Ljg5IDQ4OS4zNSAxMTMyLjI0TDQ4OS4zNSAxMTMyLjI0TDQ4Ni43NiAxMTM4LjUzUTQ4My4yMiAxMTM2LjE3IDQ3OS4yOSAxMTM1LjExUTQ3NS4zNiAxMTM0LjA1IDQ3MS42NyAxMTM0LjA1TDQ3MS42NyAxMTM0LjA1UTQ2Ny4wNCAxMTM0LjA1IDQ2NC4wNSAxMTM1LjIzUTQ2MS4wNiAxMTM2LjQxIDQ1OS42OSAxMTM4LjM3UTQ1OC4zMSAxMTQwLjM0IDQ1OC4zMSAxMTQyLjc3TDQ1OC4zMSAxMTQyLjc3UTQ1OC4zMSAxMTQ1LjY4IDQ2MC4xNiAxMTQ3LjQxUTQ2Mi4wMSAxMTQ5LjE0IDQ2NC45NSAxMTUwLjE2UTQ2Ny45MCAxMTUxLjE4IDQ3MS40NCAxMTUyLjAwUTQ3NC45NyAxMTUyLjgzIDQ3OC41NSAxMTUzLjg1UTQ4Mi4xMiAxMTU0Ljg3IDQ4NS4wNyAxMTU2LjUyUTQ4OC4wMSAxMTU4LjE3IDQ4OS44MiAxMTYwLjkyUTQ5MS42MyAxMTYzLjY3IDQ5MS42MyAxMTY3Ljk5TDQ5MS42MyAxMTY3Ljk5UTQ5MS42MyAxMTcyLjE2IDQ4OS4zNSAxMTc1LjczUTQ4Ny4wNyAxMTc5LjMxIDQ4Mi4zMiAxMTgxLjQ3UTQ3Ny41NiAxMTgzLjYzIDQ3MC4zNCAxMTgzLjYzWk01ODEuODUgMTE4M0w1NDEuOTQgMTE4M0w1NDEuOTQgMTEyOEw1ODAuNzUgMTEyOEw1ODAuNzUgMTEzNC44NEw1NDkuNzkgMTEzNC44NEw1NDkuNzkgMTE3Ni4xNkw1ODEuODUgMTE3Ni4xNkw1ODEuODUgMTE4M1pNNTc3LjM3IDExNTguNDFMNTQ5LjA5IDExNTguNDFMNTQ5LjA5IDExNTEuNzNMNTc3LjM3IDExNTEuNzNMNTc3LjM3IDExNTguNDFaTTY0OS40NCAxMTgzLjYzTDY0OS40NCAxMTgzLjYzUTY0My4xNiAxMTgzLjYzIDYzNy40MiAxMTgxLjcwUTYzMS42OSAxMTc5Ljc4IDYyOC4zOSAxMTc2LjcxTDYyOC4zOSAxMTc2LjcxTDYzMS4yOSAxMTcwLjU5UTYzNC40NCAxMTczLjM0IDYzOS4zMSAxMTc1LjE0UTY0NC4xOCAxMTc2Ljk1IDY0OS40NCAxMTc2Ljk1TDY0OS40NCAxMTc2Ljk1UTY1NC4yNCAxMTc2Ljk1IDY1Ny4yMiAxMTc1Ljg1UTY2MC4yMSAxMTc0Ljc1IDY2MS42MiAxMTcyLjgzUTY2My4wNCAxMTcwLjkwIDY2My4wNCAxMTY4LjQ2TDY2My4wNCAxMTY4LjQ2UTY2My4wNCAxMTY1LjY0IDY2MS4xOSAxMTYzLjkxUTY1OS4zNCAxMTYyLjE4IDY1Ni40MCAxMTYxLjEyUTY1My40NSAxMTYwLjA2IDY0OS45MSAxMTU5LjI3UTY0Ni4zOCAxMTU4LjQ5IDY0Mi44MCAxMTU3LjQyUTYzOS4yMyAxMTU2LjM2IDYzNi4yOCAxMTU0LjcxUTYzMy4zNCAxMTUzLjA2IDYzMS41MyAxMTUwLjI4UTYyOS43MiAxMTQ3LjQ5IDYyOS43MiAxMTQzLjA5TDYyOS43MiAxMTQzLjA5UTYyOS43MiAxMTM4Ljg0IDYzMS45NiAxMTM1LjI3UTYzNC4yMCAxMTMxLjY5IDYzOC44OCAxMTI5LjUzUTY0My41NSAxMTI3LjM3IDY1MC43OCAxMTI3LjM3TDY1MC43OCAxMTI3LjM3UTY1NS41NyAxMTI3LjM3IDY2MC4yOSAxMTI4LjYzUTY2NSAxMTI5Ljg5IDY2OC40NiAxMTMyLjI0TDY2OC40NiAxMTMyLjI0TDY2NS44NiAxMTM4LjUzUTY2Mi4zMyAxMTM2LjE3IDY1OC40MCAxMTM1LjExUTY1NC40NyAxMTM0LjA1IDY1MC43OCAxMTM0LjA1TDY1MC43OCAxMTM0LjA1UTY0Ni4xNCAxMTM0LjA1IDY0My4xNiAxMTM1LjIzUTY0MC4xNyAxMTM2LjQxIDYzOC44MCAxMTM4LjM3UTYzNy40MiAxMTQwLjM0IDYzNy40MiAxMTQyLjc3TDYzNy40MiAxMTQyLjc3UTYzNy40MiAxMTQ1LjY4IDYzOS4yNyAxMTQ3LjQxUTY0MS4xMSAxMTQ5LjE0IDY0NC4wNiAxMTUwLjE2UTY0Ny4wMSAxMTUxLjE4IDY1MC41NCAxMTUyLjAwUTY1NC4wOCAxMTUyLjgzIDY1Ny42NSAxMTUzLjg1UTY2MS4yMyAxMTU0Ljg3IDY2NC4xNyAxMTU2LjUyUTY2Ny4xMiAxMTU4LjE3IDY2OC45MyAxMTYwLjkyUTY3MC43NCAxMTYzLjY3IDY3MC43NCAxMTY3Ljk5TDY3MC43NCAxMTY3Ljk5UTY3MC43NCAxMTcyLjE2IDY2OC40NiAxMTc1LjczUTY2Ni4xOCAxMTc5LjMxIDY2MS40MiAxMTgxLjQ3UTY1Ni42NyAxMTgzLjYzIDY0OS40NCAxMTgzLjYzWk03MzcuMDcgMTE4My42M0w3MzcuMDcgMTE4My42M1E3MzAuNzkgMTE4My42MyA3MjUuMDUgMTE4MS43MFE3MTkuMzEgMTE3OS43OCA3MTYuMDEgMTE3Ni43MUw3MTYuMDEgMTE3Ni43MUw3MTguOTIgMTE3MC41OVE3MjIuMDYgMTE3My4zNCA3MjYuOTQgMTE3NS4xNFE3MzEuODEgMTE3Ni45NSA3MzcuMDcgMTE3Ni45NUw3MzcuMDcgMTE3Ni45NVE3NDEuODYgMTE3Ni45NSA3NDQuODUgMTE3NS44NVE3NDcuODQgMTE3NC43NSA3NDkuMjUgMTE3Mi44M1E3NTAuNjYgMTE3MC45MCA3NTAuNjYgMTE2OC40Nkw3NTAuNjYgMTE2OC40NlE3NTAuNjYgMTE2NS42NCA3NDguODIgMTE2My45MVE3NDYuOTcgMTE2Mi4xOCA3NDQuMDMgMTE2MS4xMlE3NDEuMDggMTE2MC4wNiA3MzcuNTQgMTE1OS4yN1E3MzQuMDEgMTE1OC40OSA3MzAuNDMgMTE1Ny40MlE3MjYuODYgMTE1Ni4zNiA3MjMuOTEgMTE1NC43MVE3MjAuOTYgMTE1My4wNiA3MTkuMTYgMTE1MC4yOFE3MTcuMzUgMTE0Ny40OSA3MTcuMzUgMTE0My4wOUw3MTcuMzUgMTE0My4wOVE3MTcuMzUgMTEzOC44NCA3MTkuNTkgMTEzNS4yN1E3MjEuODMgMTEzMS42OSA3MjYuNTAgMTEyOS41M1E3MzEuMTggMTEyNy4zNyA3MzguNDEgMTEyNy4zN0w3MzguNDEgMTEyNy4zN1E3NDMuMjAgMTEyNy4zNyA3NDcuOTEgMTEyOC42M1E3NTIuNjMgMTEyOS44OSA3NTYuMDkgMTEzMi4yNEw3NTYuMDkgMTEzMi4yNEw3NTMuNDkgMTEzOC41M1E3NDkuOTYgMTEzNi4xNyA3NDYuMDMgMTEzNS4xMVE3NDIuMTAgMTEzNC4wNSA3MzguNDEgMTEzNC4wNUw3MzguNDEgMTEzNC4wNVE3MzMuNzcgMTEzNC4wNSA3MzAuNzkgMTEzNS4yM1E3MjcuODAgMTEzNi40MSA3MjYuNDMgMTEzOC4zN1E3MjUuMDUgMTE0MC4zNCA3MjUuMDUgMTE0Mi43N0w3MjUuMDUgMTE0Mi43N1E3MjUuMDUgMTE0NS42OCA3MjYuOTAgMTE0Ny40MVE3MjguNzQgMTE0OS4xNCA3MzEuNjkgMTE1MC4xNlE3MzQuNjQgMTE1MS4xOCA3MzguMTcgMTE1Mi4wMFE3NDEuNzEgMTE1Mi44MyA3NDUuMjggMTE1My44NVE3NDguODYgMTE1NC44NyA3NTEuODAgMTE1Ni41MlE3NTQuNzUgMTE1OC4xNyA3NTYuNTYgMTE2MC45MlE3NTguMzYgMTE2My42NyA3NTguMzYgMTE2Ny45OUw3NTguMzYgMTE2Ny45OVE3NTguMzYgMTE3Mi4xNiA3NTYuMDkgMTE3NS43M1E3NTMuODEgMTE3OS4zMSA3NDkuMDUgMTE4MS40N1E3NDQuMzAgMTE4My42MyA3MzcuMDcgMTE4My42M1pNODMzLjUwIDExODMuNjNMODMzLjUwIDExODMuNjNRODI3LjIxIDExODMuNjMgODIxLjgzIDExODEuNTFRODE2LjQ1IDExNzkuMzkgODEyLjUyIDExNzUuNThRODA4LjU5IDExNzEuNzYgODA2LjM5IDExNjYuNjZRODA0LjE5IDExNjEuNTUgODA0LjE5IDExNTUuNTBMODA0LjE5IDExNTUuNTBRODA0LjE5IDExNDkuNDUgODA2LjM5IDExNDQuMzRRODA4LjU5IDExMzkuMjQgODEyLjUyIDExMzUuNDJRODE2LjQ1IDExMzEuNjEgODIxLjc5IDExMjkuNDlRODI3LjE0IDExMjcuMzcgODMzLjUwIDExMjcuMzdMODMzLjUwIDExMjcuMzdRODM5Ljc5IDExMjcuMzcgODQ1LjA5IDExMjkuNDVRODUwLjM5IDExMzEuNTQgODU0LjM2IDExMzUuMzVRODU4LjMzIDExMzkuMTYgODYwLjQ5IDExNDQuMjZRODYyLjY1IDExNDkuMzcgODYyLjY1IDExNTUuNTBMODYyLjY1IDExNTUuNTBRODYyLjY1IDExNjEuNjMgODYwLjQ5IDExNjYuNzRRODU4LjMzIDExNzEuODQgODU0LjM2IDExNzUuNjVRODUwLjM5IDExNzkuNDYgODQ1LjA5IDExODEuNTVRODM5Ljc5IDExODMuNjMgODMzLjUwIDExODMuNjNaTTgzMy41MCAxMTc2LjY0TDgzMy41MCAxMTc2LjY0UTgzOC4wNiAxMTc2LjY0IDg0MS45NSAxMTc1LjA2UTg0NS44NCAxMTczLjQ5IDg0OC43MCAxMTcwLjYzUTg1MS41NyAxMTY3Ljc2IDg1My4xOCAxMTYzLjkxUTg1NC43OSAxMTYwLjA2IDg1NC43OSAxMTU1LjUwTDg1NC43OSAxMTU1LjUwUTg1NC43OSAxMTUwLjk0IDg1My4xOCAxMTQ3LjA5UTg1MS41NyAxMTQzLjI0IDg0OC43MCAxMTQwLjM4UTg0NS44NCAxMTM3LjUxIDg0MS45NSAxMTM1Ljk0UTgzOC4wNiAxMTM0LjM2IDgzMy41MCAxMTM0LjM2TDgzMy41MCAxMTM0LjM2UTgyOC44NiAxMTM0LjM2IDgyNC45OCAxMTM1Ljk0UTgyMS4wOSAxMTM3LjUxIDgxOC4xOCAxMTQwLjM4UTgxNS4yNyAxMTQzLjI0IDgxMy42NiAxMTQ3LjA5UTgxMi4wNSAxMTUwLjk0IDgxMi4wNSAxMTU1LjUwTDgxMi4wNSAxMTU1LjUwUTgxMi4wNSAxMTYwLjA2IDgxMy42NiAxMTYzLjkxUTgxNS4yNyAxMTY3Ljc2IDgxOC4xOCAxMTcwLjYzUTgyMS4wOSAxMTczLjQ5IDgyNC45OCAxMTc1LjA2UTgyOC44NiAxMTc2LjY0IDgzMy41MCAxMTc2LjY0Wk05MjEuMzYgMTE4M0w5MTMuNTEgMTE4M0w5MTMuNTEgMTEyOEw5MzQuOTYgMTEyOFE5NDUuNjQgMTEyOCA5NTEuNzcgMTEzMy4wN1E5NTcuOTAgMTEzOC4xNCA5NTcuOTAgMTE0Ny4xN0w5NTcuOTAgMTE0Ny4xN1E5NTcuOTAgMTE1My4xNCA5NTUuMTUgMTE1Ny40MlE5NTIuNDAgMTE2MS43MSA5NDcuMjkgMTE2My45OVE5NDIuMTkgMTE2Ni4yNiA5MzQuOTYgMTE2Ni4yNkw5MzQuOTYgMTE2Ni4yNkw5MTcuODMgMTE2Ni4yNkw5MjEuMzYgMTE2Mi42NUw5MjEuMzYgMTE4M1pNOTU4Ljg0IDExODNMOTUwLjI4IDExODNMOTM2LjI5IDExNjMuMDRMOTQ0LjcwIDExNjMuMDRMOTU4Ljg0IDExODNaTTkyMS4zNiAxMTMwLjkxTDkyMS4zNiAxMTYzLjQ0TDkxNy44MyAxMTU5LjU5TDkzNC43MiAxMTU5LjU5UTk0Mi4yNiAxMTU5LjU5IDk0Ni4xNSAxMTU2LjMzUTk1MC4wNCAxMTUzLjA2IDk1MC4wNCAxMTQ3LjE3TDk1MC4wNCAxMTQ3LjE3UTk1MC4wNCAxMTQxLjI4IDk0Ni4xNSAxMTM4LjA2UTk0Mi4yNiAxMTM0Ljg0IDkzNC43MiAxMTM0Ljg0TDkzNC43MiAxMTM0Ljg0TDkxNy44MyAxMTM0Ljg0TDkyMS4zNiAxMTMwLjkxWk0xMDE3LjMyIDExODNMMTAwOS40NiAxMTgzTDEwMDkuNDYgMTEyOEwxMDE3LjMyIDExMjhMMTAxNy4zMiAxMTgzWk0xMDcyLjQyIDExODNMMTA2NC4zMyAxMTgzTDEwODkuMjQgMTEyOEwxMDk3LjAxIDExMjhMMTEyMiAxMTgzTDExMTMuNzUgMTE4M0wxMDkxLjUxIDExMzIuNDBMMTA5NC42NiAxMTMyLjQwTDEwNzIuNDIgMTE4M1pNMTExMC4yOSAxMTY5LjI1TDEwNzQuOTQgMTE2OS4yNUwxMDc3LjA2IDExNjIuOTZMMTEwOC4wMSAxMTYyLjk2TDExMTAuMjkgMTE2OS4yNVoiPjwvcGF0aD4KPHJlY3QgeD0iMjIiIHk9IjExNTAiIHdpZHRoPSIxODgiIGhlaWdodD0iOCIgZmlsbD0idXJsKCNnMykiPjwvcmVjdD48cmVjdCB4PSIxMTc4IiB5PSIxMTUwIiB3aWR0aD0iMTg4IiBoZWlnaHQ9IjgiIGZpbGw9InVybCgjZzMpIj48L3JlY3Q+PC9nPjwvc3ZnPg==" alt="Vértice Assessoria" width="473" height="100" /></a>
         <p class="footer-blurb">Assessoria preventiva e estratégica para pessoas e empresas que querem crescer com segurança.</p>
       </div>
       <div class="footer-col">
         <h4>Contato</h4>
         <a href="mailto:sac.verticeassessoria@gmail.com">sac.verticeassessoria@gmail.com</a>
         <a href="tel:+5522999124012">+55 (22) 99912-4012</a>
+        <a href="https://www.instagram.com/vertice.assessoriacj" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" style="flex:none"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle></svg>@vertice.assessoriacj</a>
         <a href="#contato">Atendimento online em todo o Brasil</a>
       </div>
     </div>
@@ -1386,7 +1361,7 @@ document.querySelectorAll('.hero-net').forEach(cv=>{if(!document.documentElement
 (function(){
   const row=document.getElementById('marqueeRow');
   if(!row)return;
-  const items=['Assessoria Contábil e Jurídica','Atendimento aos Autônomos','Consultoria Financeira','Bancário e Revisão de Contratos','Administração Condominial','Imposto de Renda','Previdenciário','Atuação Extrajudicial','Recursos de Multa','Contratos','Restituição de Impostos','Dívida Ativa'];
+  const items=['Assessoria Contábil e Jurídica','Atendimento a Autônomos','Consultoria Financeira','Bancário e Revisão de Contratos','Administração Condominial','Imposto de Renda','Previdenciário','Atuação Extrajudicial','Recursos de Multa','Contratos','Restituição de Impostos','Dívida Ativa'];
   const build=()=>items.map(t=>'<span class="marquee-item"><span class="mq-sep"></span><span class="mq-text">'+t+'</span></span>').join('');
   row.innerHTML=build()+build(); // duas cópias para loop contínuo
 })();
@@ -1602,29 +1577,29 @@ document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(
 (function(){
   const AREAS={
     '01':{t:'Assessoria Contábil e Jurídica para ME e EPP',
-      lead:'Cuidamos da espinha dorsal contábil e jurídica do seu negócio para que você foque no que importa: crescer. Da abertura da empresa à rotina mensal, atuamos como o seu departamento contábil e jurídico, sem o custo de mantê-lo internamente.',
+      lead:'Cuidamos da espinha dorsal contábil e jurídica do seu negócio para que você se concentre no que importa: crescer. Da abertura da empresa à rotina mensal, atuamos como o seu departamento contábil e jurídico, sem o custo de mantê-lo internamente.',
       do:['Abertura, alteração e enquadramento de empresas (MEI, ME, EPP)','Escrituração contábil e fiscal e entrega de obrigações acessórias','Folha de pagamento, pró-labore e gestão de encargos','Enquadramento tributário (Simples Nacional, Lucro Presumido) e planejamento','Suporte jurídico em contratos e relações com clientes e fornecedores'],
       who:'Para micro e pequenas empresas que querem regularidade, previsibilidade e tranquilidade no dia a dia.'},
-    '02':{t:'Atendimento aos Autônomos',
+    '02':{t:'Atendimento a Autônomos',
       lead:'O profissional autônomo também precisa de respaldo contábil e fiscal. Organizamos a sua vida tributária para você trabalhar com segurança, pagar o justo e manter tudo em ordem perante o Fisco.',
-      do:['Inscrição e regularização como autônomo / contribuinte individual','Cálculo e guias de tributos (Carnê-Leão, ISS, INSS)','Organização de receitas e despesas e orientação financeira','Planejamento para redução legal da carga tributária','Apoio na transição de autônomo para pessoa jurídica, quando vantajoso'],
+      do:['Inscrição e regularização como autônomo ou contribuinte individual','Cálculo e guias de tributos (Carnê-Leão, ISS, INSS)','Organização de receitas e despesas e orientação financeira','Planejamento para redução legal da carga tributária','Apoio na transição de autônomo para pessoa jurídica, quando vantajoso'],
       who:'Para profissionais liberais e prestadores de serviço que querem regularidade sem burocracia.'},
     '03':{t:'Consultoria Financeira',
-      lead:'Números claros levam a decisões melhores. Ajudamos a enxergar a real saúde financeira do seu negócio e a construir um caminho de crescimento sustentável, com base em dados e não em achismos.',
+      lead:'Números claros levam a decisões melhores. Ajudamos a enxergar a real saúde financeira do seu negócio e a construir um caminho de crescimento sustentável, com base em dados, e não em achismos.',
       do:['Diagnóstico de fluxo de caixa, custos e margens','Estruturação de controles financeiros e indicadores','Análise de viabilidade de investimentos e expansão','Renegociação e reorganização de dívidas','Planejamento orçamentário e metas financeiras'],
       who:'Para empresários que querem profissionalizar a gestão financeira e crescer com segurança.'},
     '04':{t:'Bancário e Revisão de Contratos',
       lead:'Bancos e financeiras nem sempre cobram o que é devido. Analisamos seus contratos em busca de juros abusivos, capitalização indevida e tarifas ilegais, e defendemos seus direitos contra práticas abusivas, da redução das parcelas à reparação por danos.',
-      do:['Análise técnica de contratos de empréstimo e financiamento','Identificação de juros abusivos, tarifas e cobranças indevidas','Revisão de contratos de veículos, imóveis e crédito consignado','Renegociação de dívidas e ação revisional','Pedido de repetição de indébito (devolução do que foi pago a mais)','Ações por inscrição indevida no crédito e reparação por danos'],
+      do:['Análise técnica de contratos de empréstimo e financiamento','Identificação de juros abusivos, tarifas e cobranças indevidas','Revisão de contratos de veículos, imóveis e crédito consignado','Renegociação de dívidas e ação revisional','Pedido de repetição de indébito (devolução do que foi pago a mais)','Ações por inscrição indevida em cadastros de inadimplentes e reparação por danos'],
       who:'Para pessoas e empresas endividadas que enfrentam cobranças abusivas ou conflitos com instituições financeiras.'},
     '05':{t:'Administração Condominial',
-      lead:'Um condomínio bem administrado é tranquilo para todos. Assumimos a gestão administrativa, contábil e financeira do seu condomínio com transparência total, prestação de contas clara e suporte jurídico quando preciso.',
+      lead:'Um condomínio bem administrado é tranquilo para todos. Assumimos a gestão administrativa, contábil e financeira do seu condomínio com transparência total, prestação de contas clara e suporte jurídico quando necessário.',
       do:['Gestão financeira: cotas, inadimplência, contas e reservas','Contabilidade condominial e prestação de contas transparente','Folha de funcionários e obrigações trabalhistas','Apoio em assembleias, convenções e regimento interno','Cobrança de inadimplentes e suporte jurídico'],
       who:'Para síndicos e condomínios que buscam gestão profissional e prestação de contas confiável.'},
     '06':{t:'Imposto de Renda',
       lead:'Declarar bem evita dor de cabeça e malha fina, e muitas vezes garante uma restituição maior. Cuidamos da sua declaração de pessoa física ou jurídica com precisão, dentro do prazo e com foco em segurança.',
       do:['Declaração de IRPF e IRPJ completa e revisada','Planejamento para a maior restituição legal possível','Regularização de pendências e malha fina','Orientação ao longo do ano para a próxima declaração'],
-      who:'Para pessoas físicas e jurídicas que querem declarar com segurança e sem stress.'},
+      who:'Para pessoas físicas e jurídicas que querem declarar com segurança e sem estresse.'},
     '07':{t:'Previdenciário',
       lead:'Garantir o benefício certo, no momento certo, faz toda a diferença. Orientamos e conduzimos seu pedido junto ao INSS, da análise inicial à concessão, acompanhando cada etapa do processo.',
       do:['Análise do melhor benefício e do momento ideal para requerer','Aposentadorias (idade, tempo de contribuição, especial)','Auxílio-doença, BPC/LOAS, pensão por morte e demais benefícios','Revisão de benefícios concedidos com valor incorreto','Recursos administrativos e acompanhamento de processos'],
@@ -1635,18 +1610,18 @@ document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(
       who:'Para quem quer resolver conflitos com agilidade, sem a demora de um processo judicial.'},
     '09':{t:'Recursos de Multa',
       lead:'Multa indevida tem defesa. Atuamos nos âmbitos administrativo e judicial, da notificação ao recurso e, quando necessário, com ação na Justiça, para anular autuações irregulares e proteger seus direitos.',
-      do:['Âmbito administrativo: defesa prévia e recursos em 1ª e 2ª instância (JARI e CETRAN)','Âmbito judicial: ação anulatória de multas e autuações irregulares, com pedido de liminar quando cabível','Recurso contra suspensão e cassação do direito de dirigir','Anulação de multas com vícios e autuações irregulares','Defesa em processos por excesso de pontos na CNH','Orientação sobre prazos, pontuação e identificação de condutor'],
+      do:['Âmbito administrativo: defesa prévia e recursos em 1ª e 2ª instâncias (JARI e CETRAN)','Âmbito judicial: ação anulatória de multas e autuações irregulares, com pedido de liminar quando cabível','Recurso contra suspensão e cassação do direito de dirigir','Anulação de multas com vícios e autuações irregulares','Defesa em processos por excesso de pontos na CNH','Orientação sobre prazos, pontuação e identificação de condutor'],
       who:'Para motoristas e empresas com frota que querem contestar multas e manter o direito de dirigir.'},
     '10':{t:'Contratos',
       lead:'Um bom contrato previne litígios e protege o seu negócio. Elaboramos, revisamos e negociamos contratos sob medida, com linguagem clara e segurança jurídica em cada cláusula.',
       do:['Elaboração de contratos personalizados','Revisão e análise de riscos de cláusulas','Negociação de condições e garantias','Contratos de prestação de serviços, locação e compra e venda','Distratos, aditivos e rescisões'],
       who:'Para pessoas e empresas que querem fechar acordos com segurança e sem surpresas.'},
     '11':{t:'Restituição de Impostos',
-      lead:'Muitas pessoas e empresas pagam mais impostos do que deveriam sem saber. Identificamos valores pagos a mais ou indevidamente e conduzimos o pedido de restituição ou compensação junto à Receita Federal e demais órgãos, nos âmbitos administrativo e judicial.',
+      lead:'Muitas pessoas e empresas pagam mais impostos do que deveriam, sem saber. Identificamos valores pagos a mais ou indevidamente e conduzimos o pedido de restituição ou compensação junto à Receita Federal e demais órgãos, nos âmbitos administrativo e judicial.',
       do:['Levantamento de tributos pagos a mais ou indevidamente nos últimos 5 anos','Restituição de Imposto de Renda retido na fonte e de declarações anteriores','Pedido de restituição e compensação via PER/DCOMP','Recuperação de créditos tributários para empresas (PIS, COFINS, INSS e outros)','Isenção de IR por doença grave e restituição dos valores retidos','Ação judicial de repetição de indébito tributário, quando necessário'],
       who:'Para pessoas físicas e empresas que querem reaver valores pagos indevidamente ao Fisco.'},
     '12':{t:'Dívida Ativa',
-      lead:'Débitos inscritos em dívida ativa podem gerar protesto, bloqueio de contas, penhora de bens e restrições de crédito. Analisamos a cobrança, identificamos irregularidades e buscamos a solução mais vantajosa, seja pela defesa ou pela negociação, junto à União, estados e municípios.',
+      lead:'Débitos inscritos em dívida ativa podem gerar protesto, bloqueio de contas, penhora de bens e restrições de crédito. Analisamos a cobrança, identificamos irregularidades e buscamos a solução mais vantajosa, seja pela defesa, seja pela negociação, junto à União, aos estados e aos municípios.',
       do:['Análise da certidão de dívida ativa e da legalidade da cobrança','Identificação de prescrição, decadência e cobranças indevidas','Negociação, parcelamento e transação tributária com descontos em juros e multas','Defesa em execução fiscal e exceção de pré-executividade','Suspensão e cancelamento de protestos e desbloqueio de contas e bens','Regularização para emissão de certidão negativa (CND)'],
       who:'Para pessoas físicas e empresas com débitos inscritos em dívida ativa que precisam regularizar sua situação.'}
   };
