@@ -740,6 +740,18 @@ html.lite .atmos-parallax{transform:none!important}
 @media(min-width:2800px){body{zoom:1.45}}
 @media(min-width:3400px){body{zoom:1.75}}
 img{image-rendering:auto}
+
+/* desempenho: menos camadas de composição em tela cheia */
+.atmos-glow,.atmos-beams,.atmos-grid,.atmos-spot{mix-blend-mode:normal!important}
+.atmos-beams{animation:none!important;opacity:.45!important}
+.atmos-grid{opacity:.28!important}.atmos-spot{opacity:.5!important}
+.atmos-grain,.hero-anim::after{display:none!important}
+.nav.scrolled,.nav{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.nav.scrolled{background:rgba(10,7,3,.94)!important}
+.wa-float,.sound-toggle{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+@keyframes divGrow{0%,100%{transform:translateY(-50%) scaleY(0);opacity:0}50%{transform:translateY(-50%) scaleY(1);opacity:.7}}
+.nav-links a.lnk + a.lnk::before,.dd-toggle::before,.nav-dd + a.lnk::before{height:26px!important}
+.paused-off,.paused-off *,.paused-off *::before,.paused-off *::after{animation-play-state:paused!important}
 </style>
 <link rel="stylesheet" href="mobile.css">
 <link rel="preconnect" href="https://playerservices.streamtheworld.com"><link rel="dns-prefetch" href="https://playerservices.streamtheworld.com">
@@ -893,7 +905,7 @@ img{image-rendering:auto}
       <div class="areas-grid">
         <button type="button" class="area" data-area="01">
           <span class="area-n">01</span>
-          <h3>Assessoria Contábil e Jurídica para ME e EPP</h3>
+          <h3>Assessoria Contábil</h3>
           <p>Suporte completo para micro e pequenas empresas, da abertura à rotina contábil e jurídica do dia a dia.</p>
           <span class="area-more">Saiba mais <span class="arw">→</span></span>
         </button>
@@ -936,7 +948,7 @@ img{image-rendering:auto}
         <button type="button" class="area" data-area="08">
           <span class="area-n">08</span>
           <h3>Atuação Extrajudicial</h3>
-          <p>Acordos, notificações e negociações que resolvem conflitos com agilidade, sem a demora de um processo.</p>
+          <p>Acordos, inventário e divórcio consensual em cartório, legalização de imóveis e negociações que resolvem com agilidade, sem a demora de um processo.</p>
           <span class="area-more">Saiba mais <span class="arw">→</span></span>
         </button>
         <button type="button" class="area" data-area="09">
@@ -1067,7 +1079,6 @@ img{image-rendering:auto}
         <div class="ci-row"><span class="ci-k">Atendimento</span><span class="ci-v">Online em todo o Brasil<span>Reuniões por vídeo e WhatsApp</span></span></div>
         <div class="ci-row"><span class="ci-k">Telefone</span><span class="ci-v"><a href="tel:+5522999124012" class="ci-link">+55 (22) 99912-4012</a><span><a href="https://api.whatsapp.com/send?phone=5522999124012&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20V%C3%A9rtice%20Assessoria." target="_blank" rel="noopener" class="ci-link ci-wa"><svg class="wa-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-1.6c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7.7.7-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5.6 9.9 10.3 5.2 16 5.2S26.4 9.9 26.4 15 21.7 24.8 16 24.8zm6.7-6.2c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.8.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.1-.2.2-.3.3-.6.1-.2 0-.4 0-.6-.1-.2-.8-1.8-1-2.5-.3-.7-.5-.6-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.9 5.1.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.2-.6-.4z"/></svg>WhatsApp</a></span></span></div>
         <div class="ci-row"><span class="ci-k">E-mail</span><span class="ci-v"><a href="mailto:sac.verticeassessoria@gmail.com" class="ci-link">sac.verticeassessoria@gmail.com</a></span></div>
-        <div class="ci-row"><span class="ci-k">Instagram</span><span class="ci-v"><a href="https://www.instagram.com/vertice.assessoriacj" target="_blank" rel="noopener" class="ci-link" style="display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" style="flex:none"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle></svg>@vertice.assessoriacj</a></span></div>
         <div class="ci-row"><span class="ci-k">Horário</span><span class="ci-v">Segunda a sexta · 9h às 18h</span></div>
       </div>
 
@@ -1122,7 +1133,6 @@ img{image-rendering:auto}
         <h4>Contato</h4>
         <a href="mailto:sac.verticeassessoria@gmail.com">sac.verticeassessoria@gmail.com</a>
         <a href="tel:+5522999124012">+55 (22) 99912-4012</a>
-        <a href="https://www.instagram.com/vertice.assessoriacj" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" style="flex:none"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"></circle></svg>@vertice.assessoriacj</a>
         <a href="#contato">Atendimento online em todo o Brasil</a>
       </div>
     </div>
@@ -1576,7 +1586,7 @@ document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(
 /* ---------- Modal de áreas de atuação ---------- */
 (function(){
   const AREAS={
-    '01':{t:'Assessoria Contábil e Jurídica para ME e EPP',
+    '01':{t:'Assessoria Contábil',
       lead:'Cuidamos da espinha dorsal contábil e jurídica do seu negócio para que você se concentre no que importa: crescer. Da abertura da empresa à rotina mensal, atuamos como o seu departamento contábil e jurídico, sem o custo de mantê-lo internamente.',
       do:['Abertura, alteração e enquadramento de empresas (MEI, ME, EPP)','Escrituração contábil e fiscal e entrega de obrigações acessórias','Folha de pagamento, pró-labore e gestão de encargos','Enquadramento tributário (Simples Nacional, Lucro Presumido) e planejamento','Suporte jurídico em contratos e relações com clientes e fornecedores'],
       who:'Para micro e pequenas empresas que querem regularidade, previsibilidade e tranquilidade no dia a dia.'},
@@ -1606,7 +1616,7 @@ document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(
       who:'Para trabalhadores e segurados que precisam de orientação segura junto ao INSS.'},
     '08':{t:'Atuação Extrajudicial',
       lead:'Nem todo conflito precisa virar processo. Sempre que possível, buscamos a solução mais rápida e econômica pela via extrajudicial, protegendo a relação entre as partes e poupando tempo e dinheiro.',
-      do:['Negociação e mediação entre as partes','Notificações extrajudiciais e acordos formais','Elaboração e revisão de contratos e distratos','Cobranças amigáveis e parcelamentos','Pareceres e consultoria preventiva para evitar litígios'],
+      do:['Legalização e regularização de imóveis (escritura, registro e usucapião extrajudicial)','Inventário extrajudicial em cartório','Divórcio consensual em cartório','Negociação e mediação entre as partes','Notificações extrajudiciais e acordos formais','Elaboração e revisão de contratos e distratos','Cobranças amigáveis e parcelamentos','Pareceres e consultoria preventiva para evitar litígios'],
       who:'Para quem quer resolver conflitos com agilidade, sem a demora de um processo judicial.'},
     '09':{t:'Recursos de Multa',
       lead:'Multa indevida tem defesa. Atuamos nos âmbitos administrativo e judicial, da notificação ao recurso e, quando necessário, com ação na Justiça, para anular autuações irregulares e proteger seus direitos.',
@@ -1749,5 +1759,6 @@ document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(
 <!-- Tweaks (React island) -->
 <script src="i18n.js"></script>
 <script>document.addEventListener('visibilitychange',()=>{window.__pauseBg3d=document.hidden;});</script>
+<script>(function(){if(!('IntersectionObserver' in window))return;const io=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('paused-off',!e.isIntersecting)),{rootMargin:'120px'});document.querySelectorAll('section,header.hero,.marquee,footer').forEach(s=>io.observe(s));})();</script>
 </body>
 </html>
