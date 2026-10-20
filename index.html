@@ -317,7 +317,8 @@ h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04;letter-spac
 .marquee::before{left:0;background:linear-gradient(90deg,var(--brand),transparent)}
 .marquee::after{right:0;background:linear-gradient(270deg,var(--brand),transparent)}
 .marquee-row{display:flex;width:max-content;align-items:center;gap:0;animation:marquee 38s linear infinite}
-.marquee:hover .marquee-row{animation-play-state:paused}
+@media(hover:hover) and (pointer:fine){.marquee:hover .marquee-row{animation-play-state:paused}}
+.marquee,.marquee *{-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
 .marquee-item{display:inline-flex;align-items:center;gap:18px;padding:26px 0;white-space:nowrap}
 .marquee-item .mq-text{font-family:var(--display);font-size:clamp(20px,2.4vw,30px);font-weight:500;letter-spacing:.005em;color:rgba(239,234,217,.86)}
 .marquee-item .mq-sep{width:7px;height:7px;border:1px solid var(--accent);transform:rotate(45deg);margin:0 38px;flex:none;opacity:.85}
@@ -752,6 +753,33 @@ img{image-rendering:auto}
 @keyframes divGrow{0%,100%{transform:translateY(-50%) scaleY(0);opacity:0}50%{transform:translateY(-50%) scaleY(1);opacity:.7}}
 .nav-links a.lnk + a.lnk::before,.dd-toggle::before,.nav-dd + a.lnk::before{height:26px!important}
 .paused-off,.paused-off *,.paused-off *::before,.paused-off *::after{animation-play-state:paused!important}
+
+/* botões flutuantes: regras próprias, independentes do mobile.css */
+.sound-toggle{-webkit-appearance:none;appearance:none;margin:0;font:inherit;line-height:1.2;-webkit-tap-highlight-color:transparent;touch-action:manipulation;box-sizing:border-box}
+.wa-float{box-sizing:border-box;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.wa-float *,.sound-toggle *{box-sizing:border-box}
+.wa-float svg{flex:none;max-width:none}
+.st-disc svg{width:16px;height:16px;display:block;flex:none}
+.st-ic.pause{display:none}
+.sound-toggle,.wa-float{bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+.sound-toggle{left:calc(24px + env(safe-area-inset-left,0px))}
+.wa-float{right:calc(24px + env(safe-area-inset-right,0px))}
+@media(max-width:980px){
+  .wa-float,.sound-toggle{padding:5px!important;gap:0!important;border-radius:999px!important;min-width:0;width:auto;height:auto}
+  .wa-float{right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+  .sound-toggle{left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+  .wa-float .wa-txt,.sound-toggle .st-meta{display:none!important}
+  .wa-float .wa-ic,.sound-toggle .st-disc{width:52px!important;height:52px!important;min-width:52px;min-height:52px}
+  .wa-float svg{width:24px!important;height:24px!important}
+  .st-disc svg{width:18px!important;height:18px!important}
+}
+@media(max-width:620px){.wa-float .wa-ic,.sound-toggle .st-disc{width:50px!important;height:50px!important;min-width:50px;min-height:50px}}
+
+:root{color-scheme:only dark}
+.wa-float,.sound-toggle,.wa-float *,.sound-toggle *{forced-color-adjust:none;-webkit-text-size-adjust:100%}
+.wa-float .wa-ic,.st-disc{background-color:#F5CB45!important;background-image:radial-gradient(circle at 32% 28%,#FFE58A,#F5CB45 42%,#B98712 100%)!important}
+.wa-float svg{fill:#140E05!important}.st-disc{color:#140E05!important}
+.wa-float,.sound-toggle{background-color:#17110A!important}
 </style>
 <link rel="stylesheet" href="mobile.css">
 <link rel="preconnect" href="https://playerservices.streamtheworld.com"><link rel="dns-prefetch" href="https://playerservices.streamtheworld.com">
